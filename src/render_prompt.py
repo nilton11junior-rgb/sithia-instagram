@@ -64,7 +64,7 @@ def antes_depois(d, pasta, n):
         f'.lab{{position:absolute;left:18px;top:18px;font-family:Mono;font-size:22px;letter-spacing:.2em;background:#000a;padding:8px 16px;border-radius:30px;z-index:3}}'
         f'.arrow{{position:absolute;left:300px;top:760px;font-family:Mono;font-size:70px;color:{cor}}}</style></head><body>'
         f'<div class="top"><div class="brand"><img src="{LOGO}">SITH.IA</div><div class="tag">02 / 05</div></div>'
-        f'<div class="t">DA FOTO <span class="acc">SIMPLES</span><br>AO <span class="acc">CINEMA</span></div>'
+        f'<div class="t">{d.get("titulo_antes_depois", "DA FOTO <span class=\"acc\">SIMPLES</span><br>AO <span class=\"acc\">CINEMA</span>")}</div>'
         f'<div class="card" style="left:70px;top:520px;width:330px;height:440px"><div class="lab">ANTES</div>{ia}</div>'
         f'<div class="arrow" style="left:410px;top:700px">&rarr;</div>'
         f'<div class="card" style="left:500px;top:430px;width:510px;height:680px;border-color:{cor}"><div class="lab" style="background:{cor};color:#000">DEPOIS</div>{ib}</div>'
@@ -110,8 +110,8 @@ def cta(d, n):
 
 def main(path):
     d = json.loads(Path(path).read_text(encoding="utf-8"))
-    pasta = ROOT / "criativos/fontes/prompt-teste"
-    out = ROOT / "criativos/gerados/prompt-teste" / d["id"]; out.mkdir(parents=True, exist_ok=True)
+    pasta = ROOT / d.get("pasta_imagens", "criativos/fontes/prompt-teste")
+    out = ROOT / "criativos/gerados" / Path(d.get("pasta_imagens", "criativos/fontes/prompt-teste")).name / d["id"]; out.mkdir(parents=True, exist_ok=True)
     htmls = [capa(d, pasta, 5), antes_depois(d, pasta, 5), prompt_slide(d, 5), ajustes(d, 5), cta(d, 5)]
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1080, "height": 1350})

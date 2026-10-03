@@ -65,3 +65,10 @@ Aprendeu algo (erro, acerto, decisão)? Registre em `docs/erros-e-acertos/` usan
 - Repositório público: github.com/nilton11junior-rgb/sithia-instagram. Robô: `.github/workflows/publish.yml` (a cada 30 min). Segredos `IG_USER_ID` e `IG_ACCESS_TOKEN` no GitHub. Token vale 60 dias: renovar antes de ~01/12/2026.
 - Teste real feito em 03/10: o robô publicou o post de prompt no @sith.ia.oficial (funcionou). Nilton apagou o post à mão; data devolvida para 09/10 e `estado/published.json` zerado.
 - O robô grava `estado/published.json` no GitHub. Antes de qualquer `git push` da pasta local, fazer `git pull`.
+
+## Fila e lições (03/10/2026)
+- Agendado e aprovado: notícia Astra (publicada 03/10), portfólio burger (dom 04/10 10h), prompt retrato cinema (seg 05/10 12h), portfólio barbearia (qua 07/10 12h), prompt foto de perfil (qui 08/10 12h). Faltam: notícia ter 06/10 (montar na segunda, com notícia do dia).
+- O agendador (cron) do GitHub Actions é pouco confiável e atrasa horas. Se um post não sair no horário: Actions > publicar-instagram > Run workflow (o robô publica tudo que já venceu).
+- Gemini: o Chrome bloqueia vários downloads. Para pegar imagem em tamanho original, exibir a imagem a 100% num overlay e tirar capturas em faixas (topo e base), depois juntar com PIL.
+- Gemini recusa prompts de "navalha na barba/pele"; usar objetos (escova, espuma, tigela).
+- Imagens de pessoas: continuar a conversa "Barbearia Premium: Nilton e Bruno" no Gemini (já tem as referências) em vez de reenviar fichas.
