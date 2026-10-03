@@ -1,0 +1,28 @@
+{
+  "id": "qua-portfolio-barbearia-conceito",
+  "tipo": "portfolio",
+  "publicar_em": "2026-10-07T12:00:00-03:00",
+  "aprovado": true,
+  "cor": "#D98A4B",
+  "conceito": true,
+  "pasta_imagens": "criativos/fontes/portfolio-barbearia",
+  "pessoa_estilo": "width:1080px;height:1350px;object-fit:cover;left:0;top:0",
+  "pessoa_thumb": "",
+  "imagens": {"produto": "produto.jpg", "pessoa": "pessoa.jpg", "detalhe": "detalhe.jpg"},
+  "bastidor": {"tag": "PORTFÓLIO · CONCEITO", "titulo": "Campanha de barbearia premium", "sub": "Conceito criado com IA, sem marca real"},
+  "peças": [
+    {"rotulo": "01 · O PRODUTO", "texto": "Cobre, mármore e vapor"},
+    {"rotulo": "02 · O MOMENTO", "texto": "O ritual que vende o lugar"},
+    {"rotulo": "03 · O DETALHE", "texto": "Espuma e textura de verdade"}
+  ],
+  "processo": {
+    "titulo": "Do briefing à *campanha*",
+    "passos": [
+      ["01", "BRIEFING", "Produto, público e clima da marca."],
+      ["02", "DIREÇÃO DE ARTE", "Luz, lente, cenário e referências."],
+      ["03", "GERAÇÃO E AJUSTE", "Fotos ultra realistas, refinadas até ficarem prontas."]
+    ]
+  },
+  "cta": {"titulo": "Quer uma campanha assim pra *sua marca?*", "botao": "CHAME NA DM", "nota": "Conceito criado com IA. Não é um cliente real."},
+  "legenda": "Bastidor de uma campanha conceito para barbearia premium 💈\n\nEste é um conceito criado com IA pela SITH.IA, sem marca ou cliente real.\n\nProduto, cena e detalhe nascendo do mesmo briefing.\n\nQuer uma campanha assim para a sua marca?\nChama na DM.\n\n#sithia #conceito #fotografiadeproduto #barbearia #criativoscomia #inteligenciaartificial #publicidade"
+}

@@ -26,7 +26,7 @@ def uri(pasta, nome): return "data:image/jpeg;base64," + b64(pasta / nome)
 
 def bastidor(d, pasta, n):
     cor, b, im = d["cor"], d["bastidor"], d["imagens"]
-    thumbs = "".join(f'<div style="flex:1;border-radius:10px;overflow:hidden;position:relative"><img src="{uri(pasta, im[k])}" style="width:100%;height:100%;object-fit:cover;{"transform:scale(1.35);transform-origin:80% 100%" if k=="pessoa" else ""}"></div>'
+    thumbs = "".join(f'<div style="flex:1;border-radius:10px;overflow:hidden;position:relative"><img src="{uri(pasta, im[k])}" style="width:100%;height:100%;object-fit:cover;{d.get("pessoa_thumb","transform:scale(1.35);transform-origin:80% 100%") if k=="pessoa" else ""}"></div>'
                      for k in ("produto", "pessoa", "detalhe"))
     return (f'<html><head><meta charset="utf-8"><style>{BASE(cor)}'
         f'body{{background:radial-gradient(ellipse at 50% 30%,#2b1d12 0,#0d0906 70%)}}'
@@ -87,9 +87,9 @@ def cta(d, pasta, n):
 def main(path):
     d = json.loads(Path(path).read_text(encoding="utf-8"))
     pasta = ROOT / d["pasta_imagens"]
-    out = ROOT / "criativos/gerados/portfolio-burger" / d["id"]; out.mkdir(parents=True, exist_ok=True)
+    out = ROOT / "criativos/gerados" / Path(d["pasta_imagens"]).name / d["id"]; out.mkdir(parents=True, exist_ok=True)
     cover = "width:1080px;height:1350px;object-fit:cover;left:0;top:0"
-    pessoa = "width:1250px;height:auto;left:-250px;top:-250px"  # empurra o letreiro do fundo pra fora do quadro
+    pessoa = d.get("pessoa_estilo", "width:1250px;height:auto;left:-250px;top:-250px")  # burger: empurra o letreiro do fundo pra fora do quadro
     slides = [bastidor(d, pasta, 1), peca(d, pasta, 2, "produto", 0, cover), peca(d, pasta, 3, "pessoa", 1, pessoa),
               peca(d, pasta, 4, "detalhe", 2, cover), processo(d, pasta, 5), cta(d, pasta, 6)]
     with sync_playwright() as p:
