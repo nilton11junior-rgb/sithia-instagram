@@ -1,18 +1,30 @@
 name: publicar-instagram
 on:
   schedule:
-    - cron: "*/30 * * * *"   # checa a cada 30 min se há post vencido
+    - cron: "*/15 * * * *"   # confere se há post vencido (o GitHub pode atrasar)
+  push:
+    paths:
+      - "conteudo/calendario/**"   # ao aprovar um post, o robô acorda na hora e espera o horário exato
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: publicar
+  cancel-in-progress: false
 jobs:
   publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install requests
+      - name: Aguardar o horário do próximo post (até 5h30)
+        run: |
+          S=$(python3 src/espera.py 2>/dev/null || echo 0)
+          echo "esperando $S segundos"
+          if [ "$S" -gt 0 ]; then sleep "$S"; fi
       - name: Publicar posts vencidos
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
@@ -24,4 +36,4 @@ jobs:
         run: |
           git config user.name "sith-bot"; git config user.email "bot@users.noreply.github.com"
           git add estado/published.json 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "estado: posts publicados" && git push)
+          git diff --cached --quiet || (git commit -m "estado: posts publicados" && git pull --rebase && git push)
