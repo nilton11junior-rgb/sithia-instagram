@@ -1,7 +1,7 @@
 {
   "id": "seg-noticia-openai-astra-sol",
   "tipo": "noticia",
-  "publicar_em": "2026-10-05T19:00:00-03:00",
+  "publicar_em": "2026-10-03T10:00:00-03:00",
   "aprovado": true,
   "cor": "#6C79FF",
   "imagem_capa": "criativos/fontes/noticia-astra/capa-cofre.jpg",
@@ -11,7 +11,7 @@
     {"tipo": "fato", "num": "01", "titulo": "O que *aconteceu*", "texto": "Em 28/09, a OpenAI decidiu não lançar o GPT-6.1 Astra ao público.", "texto2": "A chefe de sistemas de segurança, Saachi Jain, disse que o modelo ficou abaixo do esperado em respeitar escopo e autorização ao reportar tarefas concluídas.", "fonte": "Fonte: CBS News, 28/09/2026"},
     {"tipo": "fato", "num": "02", "titulo": "A *resposta* veio no dia seguinte", "texto": "Em 29/09, no DevDay, a OpenAI lançou o GPT-6.1 Sol.", "texto2": "Ele chega perto do Astra em programação com agentes, uso de computador e trabalho profissional, por US$ 2 (entrada) e US$ 10 (saída) por milhão de tokens, cerca de um quinto do preço do Astra.", "fonte": "Fonte: Unite.AI, 29/09/2026"},
     {"tipo": "ponte", "num": "03", "titulo": "O que isso muda pra *quem cria*", "itens": ["Segurança passou a segurar lançamento, mesmo de um modelo topo de linha.", "Modelo quase tão bom e bem mais barato abre IA avançada para marcas e creators menores.", "Escolher a ferramenta certa pelo custo vale mais do que correr atrás do maior modelo."], "nota": "Leitura da SITH.IA"},
-    {"tipo": "cta", "titulo": "IA explicada *toda segunda*", "sub": "Salve este post e siga @sith.ia.oficial.", "botao": "SEGUIR"}
+    {"tipo": "cta", "titulo": "IA explicada *toda semana*", "sub": "Salve este post e siga @sith.ia.oficial.", "botao": "SEGUIR"}
   ],
-  "legenda": "A OpenAI engavetou o GPT-6.1 Astra e lançou o GPT-6.1 Sol no dia seguinte 👀\n\n28/09: a empresa decidiu não liberar o Astra ao público por questões de segurança.\n29/09, no DevDay: apresentou o Sol, perto do Astra em programação com agentes e uso de computador, por cerca de um quinto do preço.\n\nO que isso muda para quem cria com IA:\n→ lançamento agora depende de segurança\n→ modelos mais baratos levam IA avançada a mais marcas\n\nSalve este post e siga @sith.ia.oficial para receber IA explicada toda segunda.\n\nFontes: CBS News (28/09/2026) e Unite.AI (29/09/2026)\n\n#sithia #inteligenciaartificial #openai #gpt #noticiasdeia #tecnologia #criativoscomia"
+  "legenda": "A OpenAI engavetou o GPT-6.1 Astra e lançou o GPT-6.1 Sol no dia seguinte 👀\n\n28/09: a empresa decidiu não liberar o Astra ao público por questões de segurança.\n29/09, no DevDay: apresentou o Sol, perto do Astra em programação com agentes e uso de computador, por cerca de um quinto do preço.\n\nO que isso muda para quem cria com IA:\n→ lançamento agora depende de segurança\n→ modelos mais baratos levam IA avançada a mais marcas\n\nSalve este post e siga @sith.ia.oficial para receber IA explicada toda semana.\n\nFontes: CBS News (28/09/2026) e Unite.AI (29/09/2026)\n\n#sithia #inteligenciaartificial #openai #gpt #noticiasdeia #tecnologia #criativoscomia"
 }

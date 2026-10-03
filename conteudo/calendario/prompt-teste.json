@@ -1,7 +1,7 @@
 {
   "id": "sex-prompt-retrato-cinema",
   "tipo": "prompt",
-  "publicar_em": "2026-10-09T19:00:00-03:00",
+  "publicar_em": "2026-10-05T12:00:00-03:00",
   "aprovado": true,
   "cor": "#FF8A3D",
   "ferramenta": "Gemini (Nano Banana)",
@@ -18,6 +18,6 @@
     ["LENTE", "Use 35mm para mostrar o ambiente ou 135mm para fundo mais desfocado."],
     ["CLIMA", "Adicione chuva, neblina ou fumaça para mudar a cena."]
   ],
-  "cta": {"titulo": "Um prompt novo *toda sexta.*", "sub": "Salve este post e siga @sith.ia.oficial.", "botao": "SEGUIR"},
-  "legenda": "Transforme qualquer foto em um retrato de cinema, com um prompt só 🎬\n\nO que você precisa:\n→ Uma foto sua (ou de qualquer pessoa)\n→ O Gemini (Nano Banana)\n→ O prompt completo, que está nos slides\n\nDepois é só trocar a luz, a lente e o clima para criar o seu estilo.\n\nSalve este post para usar depois.\nSiga @sith.ia.oficial: um prompt novo toda sexta.\n\n#sithia #prompts #inteligenciaartificial #gemini #designcomia"
+  "cta": {"titulo": "Um prompt novo *toda semana.*", "sub": "Salve este post e siga @sith.ia.oficial.", "botao": "SEGUIR"},
+  "legenda": "Transforme qualquer foto em um retrato de cinema, com um prompt só 🎬\n\nO que você precisa:\n→ Uma foto sua (ou de qualquer pessoa)\n→ O Gemini (Nano Banana)\n→ O prompt completo, que está nos slides\n\nDepois é só trocar a luz, a lente e o clima para criar o seu estilo.\n\nSalve este post para usar depois.\nSiga @sith.ia.oficial: um prompt novo toda semana.\n\n#sithia #prompts #inteligenciaartificial #gemini #designcomia"
 }
