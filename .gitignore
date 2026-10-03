@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db
+# criativos/gerados/ é versionado de propósito: a publicação usa as imagens via URL pública
+
+# Repositório é PÚBLICO: nada pessoal nem rascunho antigo
+marca/personagens/
+criativos/gerados/**/*.png
+criativos/gerados/2026-10-05/
+criativos/gerados/2026-10-07/
+
+# Rascunhos do Claude (nao publicar)
+Claude outputs/

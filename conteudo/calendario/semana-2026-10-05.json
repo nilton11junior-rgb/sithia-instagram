@@ -1,0 +1,125 @@
+{
+  "semana": "2026-10-05",
+  "posts": [
+    {
+      "id": "seg-ia-marca",
+      "publicar_em": "2026-10-05T19:00:00-03:00",
+      "legenda": "Sua marca já usa IA para criar conteúdo? 🚀\n\nNeste carrossel mostramos 4 formas práticas de começar hoje.\n\nSalva para consultar depois e chama na DM para tirar sua ideia do papel.\n\n#sithia #iaparamarcas #conteudocomia #criativoscomia #marketingdigital #inteligenciaartificial",
+      "slides": [
+        {
+          "tipo": "capa",
+          "kicker": "GUIA RÁPIDO",
+          "titulo": "4 formas de usar *IA* na sua marca",
+          "sub": "Arrasta para o lado"
+        },
+        {
+          "tipo": "item",
+          "num": "01",
+          "titulo": "Imagens com *identidade*",
+          "texto": "Peças visuais consistentes, no estilo da sua marca, em minutos."
+        },
+        {
+          "tipo": "item",
+          "num": "02",
+          "titulo": "Vídeos *publicitários*",
+          "texto": "Conteúdo em vídeo para atrair, engajar e converter."
+        },
+        {
+          "tipo": "item",
+          "num": "03",
+          "titulo": "Influenciadores *virtuais*",
+          "texto": "Personagens digitais para campanhas e conteúdo recorrente."
+        },
+        {
+          "tipo": "item",
+          "num": "04",
+          "titulo": "Criativos para *redes*",
+          "texto": "Posts e anúncios pensados para presença digital constante."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Quer criar com a *SITH.IA*?",
+          "sub": "Chame na DM e tire sua ideia do papel.",
+          "botao": "CHAME NA DM"
+        }
+      ],
+      "aprovado": false
+    },
+    {
+      "id": "qua-influencer-virtual",
+      "publicar_em": "2026-10-07T19:00:00-03:00",
+      "legenda": "Influenciador virtual: do conceito ao vídeo em movimento ✨\n\nPersonagem criado do zero, com rosto, estilo e voz consistentes.\n\nQuer um para a sua marca? Chama na DM.\n\n#influenciadorvirtual #iaparacreators #sithia #avatarcomia #videocomia #creators",
+      "slides": [
+        {
+          "tipo": "capa",
+          "kicker": "BASTIDORES",
+          "titulo": "Como nasce um influenciador *virtual*",
+          "sub": "Do conceito ao movimento"
+        },
+        {
+          "tipo": "item",
+          "num": "01",
+          "titulo": "Conceito e *persona*",
+          "texto": "Definimos estilo, público e personalidade do personagem."
+        },
+        {
+          "tipo": "item",
+          "num": "02",
+          "titulo": "Rosto *consistente*",
+          "texto": "Geramos o personagem mantendo a mesma identidade em todas as cenas."
+        },
+        {
+          "tipo": "item",
+          "num": "03",
+          "titulo": "Animação e *voz*",
+          "texto": "O personagem ganha movimento, expressão e narração."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Seu personagem, do papel à *tela*",
+          "sub": "Chame na DM e vamos criar o seu.",
+          "botao": "CHAME NA DM"
+        }
+      ],
+      "aprovado": false
+    },
+    {
+      "id": "sex-erros-prompt",
+      "publicar_em": "2026-10-09T19:00:00-03:00",
+      "legenda": "3 erros que deixam suas imagens de IA com cara de genérico 👀\n\nSalva e testa no próximo prompt.\n\n#promptengineering #iaparacriativos #sithia #imagemcomia #dicasdeia",
+      "slides": [
+        {
+          "tipo": "capa",
+          "kicker": "DICAS DE IA",
+          "titulo": "3 erros que deixam sua imagem de IA *genérica*",
+          "sub": "Arrasta para o lado"
+        },
+        {
+          "tipo": "item",
+          "num": "01",
+          "titulo": "Prompt *vago*",
+          "texto": "Sem estilo, luz e enquadramento definidos, a IA escolhe o mais comum."
+        },
+        {
+          "tipo": "item",
+          "num": "02",
+          "titulo": "Sem *referência*",
+          "texto": "Imagens de referência travam estética e identidade da marca."
+        },
+        {
+          "tipo": "item",
+          "num": "03",
+          "titulo": "Sem *revisão*",
+          "texto": "Gerar é só o começo: ajuste, upscale e finalização fazem a diferença."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Quer resultado *profissional*?",
+          "sub": "A SITH.IA cuida do processo todo.",
+          "botao": "CHAME NA DM"
+        }
+      ],
+      "aprovado": false
+    }
+  ]
+}

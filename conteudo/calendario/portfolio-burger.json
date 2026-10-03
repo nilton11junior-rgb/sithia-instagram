@@ -1,0 +1,26 @@
+{
+  "id": "qua-portfolio-burger-conceito",
+  "tipo": "portfolio",
+  "publicar_em": "2026-10-07T19:00:00-03:00",
+  "aprovado": true,
+  "cor": "#F2A33A",
+  "conceito": true,
+  "pasta_imagens": "criativos/fontes/portfolio-burger",
+  "imagens": {"produto": "burger-produto.jpg", "pessoa": "burger-pessoa.jpg", "detalhe": "burger-detalhe.jpg"},
+  "bastidor": {"tag": "PORTFÓLIO · CONCEITO", "titulo": "Campanha de hamburgueria artesanal", "sub": "Conceito criado com IA, sem marca real"},
+  "peças": [
+    {"rotulo": "01 · O PRODUTO", "texto": "Smash burger em luz de balcão"},
+    {"rotulo": "02 · O MOMENTO", "texto": "A cena que dá fome"},
+    {"rotulo": "03 · O DETALHE", "texto": "Queijo derretido, textura real"}
+  ],
+  "processo": {
+    "titulo": "Do briefing à *campanha*",
+    "passos": [
+      ["01", "BRIEFING", "Produto, público e clima da marca."],
+      ["02", "DIREÇÃO DE ARTE", "Luz, lente, cenário e referências."],
+      ["03", "GERAÇÃO E AJUSTE", "Fotos ultra realistas, refinadas até ficarem prontas."]
+    ]
+  },
+  "cta": {"titulo": "Quer uma campanha assim pra *sua marca?*", "botao": "CHAME NA DM", "nota": "Conceito criado com IA. Não é um cliente real."},
+  "legenda": "Bastidor de uma campanha conceito para hamburgueria artesanal 🍔\n\nEste é um conceito criado com IA pela SITH.IA, sem marca ou cliente real, para mostrar como produto, cena e detalhe podem nascer de um mesmo briefing.\n\nQuer uma campanha assim para a sua marca? Chama na DM.\n\n#sithia #conceito #fotografiadeproduto #hamburgueria #criativoscomia #inteligenciaartificial #publicidade"
+}

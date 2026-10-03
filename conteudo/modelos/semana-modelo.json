@@ -1,0 +1,16 @@
+{
+  "semana": "AAAA-MM-DD (segunda-feira da semana)",
+  "posts": [
+    {
+      "id": "seg-tema-curto",
+      "publicar_em": "AAAA-MM-DDT19:00:00-03:00",
+      "legenda": "Gancho na primeira linha.\n\nCorpo curto com a promessa do carrossel.\n\nPedido claro (salve, comente ou chame na DM).\n\n#sithia #iaparamarcas #conteudocomia",
+      "slides": [
+        {"tipo": "capa", "kicker": "ROTULO", "titulo": "Promessa com *destaque*", "sub": "Arrasta para o lado"},
+        {"tipo": "item", "num": "01", "titulo": "Ideia *um*", "texto": "Uma ideia por slide, texto curto."},
+        {"tipo": "item", "num": "02", "titulo": "Ideia *dois*", "texto": "Mantenha frases curtas."},
+        {"tipo": "cta", "titulo": "Quer criar com a *SITH.IA*?", "sub": "Chame na DM e tire sua ideia do papel.", "botao": "CHAME NA DM"}
+      ]
+    }
+  ]
+}

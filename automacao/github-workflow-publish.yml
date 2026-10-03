@@ -1,0 +1,28 @@
+# Mover para .github/workflows/publish.yml ao subir para o GitHub
+name: publicar-instagram
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # checa a cada 30 min se há post vencido
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests
+      - name: Publicar posts vencidos
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          PUBLIC_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/criativos/gerados
+        run: |
+          for f in conteudo/calendario/*.json; do python3 src/publish.py "$f"; done
+      - name: Salvar estado
+        run: |
+          git config user.name "sith-bot"; git config user.email "bot@users.noreply.github.com"
+          git add estado/published.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "estado: posts publicados" && git push)
