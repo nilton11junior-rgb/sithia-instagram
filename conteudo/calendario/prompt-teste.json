@@ -1,7 +1,7 @@
 {
   "id": "sex-prompt-retrato-cinema",
   "tipo": "prompt",
-  "publicar_em": "2026-10-03T03:00:00-03:00",
+  "publicar_em": "2026-10-09T19:00:00-03:00",
   "aprovado": true,
   "cor": "#FF8A3D",
   "ferramenta": "Gemini (Nano Banana)",
@@ -19,5 +19,5 @@
     ["CLIMA", "Adicione chuva, neblina ou fumaça para mudar a cena."]
   ],
   "cta": {"titulo": "Um prompt novo *toda sexta.*", "sub": "Salve este post e siga @sith.ia.oficial.", "botao": "SEGUIR"},
-  "legenda": "Prompt de retrato cinematográfico, testado no Gemini. Copie, cole e troque a luz, a lente e o clima. Salve para usar depois e siga @sith.ia.oficial para um prompt novo toda sexta. #sithia #prompts #inteligenciaartificial #gemini #designcomia"
+  "legenda": "Transforme qualquer foto em um retrato de cinema, com um prompt só 🎬\n\nO que você precisa:\n→ Uma foto sua (ou de qualquer pessoa)\n→ O Gemini (Nano Banana)\n→ O prompt completo, que está nos slides\n\nDepois é só trocar a luz, a lente e o clima para criar o seu estilo.\n\nSalve este post para usar depois.\nSiga @sith.ia.oficial: um prompt novo toda sexta.\n\n#sithia #prompts #inteligenciaartificial #gemini #designcomia"
 }
