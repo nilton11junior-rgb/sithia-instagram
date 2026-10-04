@@ -14,7 +14,7 @@ Uso:
 Aceita dois formatos de arquivo: {"semana":..., "posts":[...]} ou um único post (JSON com "id" e "slides").
 As imagens são os JPEG slide-NN.jpg em criativos/gerados/**/<id>/ (gere com src/export_jpg.py).
 Estado dos posts já publicados: estado/published.json (não republica duas vezes)."""
-import json, os, sys, time
+import json, os, subprocess, sys, time
 from datetime import datetime, timezone
 from pathlib import Path
 import requests
@@ -67,6 +67,22 @@ def publish_post(post, base):
     wait_ready(parent)
     return call("POST", f"{uid}/media_publish", creation_id=parent)["id"]
 
+def salvar_estado_no_git():
+    """Grava o estado no repositório logo após cada publicação (só no GitHub Actions),
+    assim um erro em outro post não faz o robô republicar este."""
+    if not os.environ.get("GITHUB_ACTIONS"):
+        return
+    try:
+        run = lambda *a: subprocess.run(a, cwd=ROOT, check=True, capture_output=True)
+        run("git", "config", "user.name", "sith-bot")
+        run("git", "config", "user.email", "bot@users.noreply.github.com")
+        run("git", "add", "estado/published.json")
+        run("git", "commit", "-m", "estado: post publicado")
+        run("git", "pull", "--rebase")
+        run("git", "push")
+    except Exception as e:
+        print(f"aviso: não consegui salvar o estado no git agora: {e}")
+
 def posts_do_arquivo(path):
     data = json.loads(Path(path).read_text(encoding="utf-8"))
     return data["posts"] if "posts" in data else [data]
@@ -78,6 +94,7 @@ def main():
     state = json.loads(STATE.read_text()) if STATE.exists() else {}
     now = datetime.now(timezone.utc)
     base = os.environ.get("PUBLIC_BASE_URL", "").rstrip("/")
+    falhas = []
     for post in posts_do_arquivo(args[0]):
         due = datetime.fromisoformat(post["publicar_em"])
         if post["id"] in state:
@@ -94,10 +111,23 @@ def main():
             for j in jpgs:
                 print(f"   {base or '<PUBLIC_BASE_URL>'}/{rel}/{j.name}")
             continue
-        media_id = publish_post(post, base)
-        state[post["id"]] = {"media_id": media_id, "em": now.isoformat()}
+        try:
+            media_id = publish_post(post, base)
+        except Exception as e:  # um post com erro não trava os outros; falha vira exit 1 no final
+            print(f"ERRO ao publicar {post['id']}: {e}")
+            falhas.append(post["id"])
+            continue
+        info = {"media_id": media_id, "em": now.isoformat()}
+        try:  # confirmação: o Instagram precisa devolver o link do post recém-publicado
+            info["permalink"] = call("GET", media_id, fields="permalink")["permalink"]
+        except Exception as e:
+            print(f"aviso: publicado mas não consegui confirmar o link de {post['id']}: {e}")
+        state[post["id"]] = info
         STATE.write_text(json.dumps(state, indent=2))
-        print(f"publicado {post['id']} -> {media_id}")
+        salvar_estado_no_git()
+        print(f"publicado {post['id']} -> {media_id} {info.get('permalink', '')}")
+    if falhas:
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
