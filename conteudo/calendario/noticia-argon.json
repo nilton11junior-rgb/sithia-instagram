@@ -2,7 +2,7 @@
   "id": "ter-noticia-gemini-4-argon",
   "tipo": "noticia",
   "publicar_em": "2026-10-06T12:00:00-03:00",
-  "aprovado": false,
+  "aprovado": true,
   "cor": "#6C79FF",
   "imagem_capa": "criativos/fontes/noticia-argon/capa-argon.jpg",
   "faixa": "SITH.IA NEWS · OUT 2026",
