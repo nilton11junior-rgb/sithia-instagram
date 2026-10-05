@@ -1,0 +1,51 @@
+{
+  "id": "ter-noticia-gemini-4-argon",
+  "tipo": "noticia",
+  "publicar_em": "2026-10-06T12:00:00-03:00",
+  "aprovado": false,
+  "cor": "#6C79FF",
+  "imagem_capa": "criativos/fontes/noticia-argon/capa-argon.jpg",
+  "faixa": "SITH.IA NEWS · OUT 2026",
+  "slides": [
+    {
+      "tipo": "capa",
+      "kicker": "IA · NOTÍCIA DA SEMANA",
+      "titulo": "Google lançou o *Gemini 4 Argon*",
+      "sub": "Mas só um grupo seleto pode usar"
+    },
+    {
+      "tipo": "fato",
+      "num": "01",
+      "titulo": "O que *aconteceu*",
+      "texto": "Em 30/09, o Google apresentou o Gemini 4 Argon, seu novo modelo topo de linha.",
+      "texto2": "Por enquanto, só defensores de segurança cibernética e o governo dos EUA têm acesso. API paga e assinantes Ultra ainda não têm data.",
+      "fonte": "Fonte: VentureBeat, 30/09/2026"
+    },
+    {
+      "tipo": "fato",
+      "num": "02",
+      "titulo": "Os *números* do Google",
+      "texto": "O Google diz liderar ou empatar em 13 de 18 testes. Ninguém de fora confirmou.",
+      "texto2": "Ex.: 77,9% no DeepSWE contra 74,2% do Claude Opus 5.5. Preço de lançamento: US$ 2 (entrada) e US$ 10 (saída) por milhão de tokens, depois US$ 4 e US$ 20.",
+      "fonte": "Fonte: The Stack e AI Weekly, 01/10/2026"
+    },
+    {
+      "tipo": "ponte",
+      "num": "03",
+      "titulo": "O que isso muda pra *quem cria*",
+      "itens": [
+        "A disputa pelo topo esquentou: Google, OpenAI e Anthropic estão lado a lado.",
+        "Teste de laboratório é ponto de partida, não prova. Teste na sua tarefa.",
+        "Preço de lançamento é promocional: calcule o custo real antes de montar seu fluxo."
+      ],
+      "nota": "Leitura da SITH.IA"
+    },
+    {
+      "tipo": "cta",
+      "titulo": "IA explicada *toda semana*",
+      "sub": "Salve este post e siga @sith.ia.oficial.",
+      "botao": "SEGUIR"
+    }
+  ],
+  "legenda": "O Google finalmente mostrou o Gemini 4 Argon, mas quase ninguém pode usar ainda 👀\n\n30/09: o Google apresentou o novo modelo topo de linha e diz liderar ou empatar em 13 de 18 testes.\nPor enquanto, só defensores de segurança cibernética e o governo dos EUA têm acesso. Os testes são do próprio Google e ainda não foram repetidos por laboratórios independentes.\n\nO que isso muda para quem cria com IA:\n→ a disputa entre Google, OpenAI e Anthropic está mais apertada\n→ teste o modelo na sua tarefa antes de confiar na tabela\n→ o preço de lançamento é promocional, então calcule o custo real\n\nSalve este post e siga @sith.ia.oficial para receber IA explicada toda semana.\n\nFontes: VentureBeat (30/09/2026), The Stack e AI Weekly (01/10/2026)\n\n#sithia #inteligenciaartificial #gemini #google #noticiasdeia #tecnologia #criativoscomia"
+}
