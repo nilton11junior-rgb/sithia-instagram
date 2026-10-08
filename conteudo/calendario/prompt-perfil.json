@@ -2,7 +2,7 @@
   "id": "qui-prompt-foto-perfil-estudio",
   "tipo": "prompt",
   "publicar_em": "2026-10-08T12:00:00-03:00",
-  "aprovado": true,
+  "aprovado": false,
   "cor": "#7FD1C7",
   "ferramenta": "Gemini (Nano Banana)",
   "imagens": {
