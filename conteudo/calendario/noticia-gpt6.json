@@ -1,0 +1,51 @@
+{
+  "id": "sex-noticia-chatgpt-gpt6-intelligent-ui",
+  "tipo": "noticia",
+  "publicar_em": "2026-10-09T12:00:00-03:00",
+  "aprovado": true,
+  "cor": "#8B7CFF",
+  "imagem_capa": "criativos/fontes/noticia-gpt6/capa-gpt6.jpg",
+  "faixa": "SITH.IA NEWS · OUT 2026",
+  "slides": [
+    {
+      "tipo": "capa",
+      "kicker": "IA · NOTÍCIA DA SEMANA",
+      "titulo": "O ChatGPT parou de *só escrever*",
+      "sub": "GPT-6 chegou para todos, até no plano grátis"
+    },
+    {
+      "tipo": "fato",
+      "num": "01",
+      "titulo": "O que *aconteceu*",
+      "texto": "Em 07/10, a OpenAI liberou o GPT-6 e a Intelligent UI no ChatGPT.",
+      "texto2": "Plano grátis e Go receberam em 08/10, com o GPT-6 Luna como padrão. Nos planos pagos (Plus, Pro, Business e Enterprise), o padrão é o GPT-6 Sol.",
+      "fonte": "Fonte: OpenAI e GIGAZINE, 08/10/2026"
+    },
+    {
+      "tipo": "fato",
+      "num": "02",
+      "titulo": "Respostas que *você mexe*",
+      "texto": "A IA escolhe o melhor formato: texto, imagem, gráfico ou botões que você clica.",
+      "texto2": "Ex.: calculadora para dividir a conta, receita que ajusta os ingredientes por porção, mapa de viagem e minijogos dentro do chat. A OpenAI diz que respostas com busca ficaram 44% mais rápidas.",
+      "fonte": "Fonte: OpenAI e GIGAZINE, 08/10/2026"
+    },
+    {
+      "tipo": "ponte",
+      "num": "03",
+      "titulo": "O que isso muda pra *quem cria*",
+      "itens": [
+        "Peça ferramentas, não só texto: \"monte uma calculadora de orçamento para mim\".",
+        "Teste com o seu cliente: simulador de preço, roteiro de viagem, checklist que dá para clicar.",
+        "O plano grátis já tem: dá para testar hoje, sem pagar nada."
+      ],
+      "nota": "Leitura da SITH.IA"
+    },
+    {
+      "tipo": "cta",
+      "titulo": "IA explicada *toda semana*",
+      "sub": "Salve este post e siga @sith.ia.oficial.",
+      "botao": "SEGUIR"
+    }
+  ],
+  "legenda": "O ChatGPT parou de responder só com texto, e isso vale até para o plano grátis.\n\nEm 07/10, a OpenAI liberou o GPT-6 e a Intelligent UI no ChatGPT. Agora a IA escolhe o melhor formato para cada pergunta: texto, imagem, gráfico ou botões que você clica.\n\nNa prática, ela monta dentro do chat:\n→ calculadora para dividir a conta\n→ receita que ajusta os ingredientes por porção\n→ mapa com roteiro de viagem\n→ gráficos que você mexe e até minijogos\n\nTeste hoje: peça \"monte uma calculadora de orçamento para o meu negócio\" e veja o que aparece.\n\nSalve este post para testar depois.\nSiga @sith.ia.oficial para receber IA explicada toda semana.\n\nFontes: OpenAI (Central de Ajuda) e GIGAZINE (08/10/2026)\n\n#sithia #inteligenciaartificial #chatgpt #openai #noticiasdeia #tecnologia"
+}

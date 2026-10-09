@@ -1,0 +1,63 @@
+{
+  "id": "qui-prompt-hud-rua",
+  "tipo": "prompt-editorial",
+  "publicar_em": "2026-10-08T12:00:00-03:00",
+  "aprovado": false,
+  "cor": "#8B5CF6",
+  "pasta_imagens": "criativos/fontes/prompt-hud-rua",
+  "imagem": "hero.jpg",
+  "capa": {
+    "linha1": "Foto de rua",
+    "linha2": "modo HUD",
+    "tagline": ""
+  },
+  "prompt_titulo": "Copie e *cole*",
+  "prompt_texto": "Use a pessoa da foto de referência como sujeito exato, mantendo rosto, cabelo e traços idênticos. Foto de rua editorial ultrarrealista, vista de cima em plongê sobre uma faixa de pedestre preto e branco, sol forte do meio-dia com sombras longas e duras, ele caminha em direção à câmera olhando para cima, regata preta canelada, calça cargo jeans azul-escura larga com corrente, colar prateado, óculos escuros pretos envolventes, copo de café na mão, tênis cinza. Foto limpa, sem texto. Depois sobreponha um HUD de vigilância: cantos de enquadramento, caixas tracejadas no rosto e nas mãos, cartão de ID com a foto dele e o nome da sua marca.",
+  "ficha": [
+    "Gemini · modo Pro",
+    "3:4 vertical",
+    "anexe sua foto de rosto"
+  ],
+  "cta": {
+    "titulo": "Gostou? *Salve* esse prompt",
+    "sub": "Troque a cena, a roupa e a cidade e faça o seu. Marque @sith.ia.oficial com o resultado.",
+    "botao": "SIGA O SITH.IA"
+  },
+  "legenda": "Sua foto de rua virou cena de vigilância, com a sua cara e a sua marca no HUD.\n\nO segredo: gerar a foto limpa primeiro e colocar o HUD depois, assim o texto sai nítido.\n\nEstá tudo no slide 3: copie o prompt, anexe uma foto do seu rosto e troque roupa, cidade e objeto na mão.\n\nSalve esse post para usar depois.\nComente \"HUD\" que eu mando o passo a passo do overlay.\nSiga @sith.ia.oficial para mais prompts de IA.\n\n#sithia #prompts #inteligenciaartificial #gemini #fotoia #promptsdeia",
+  "cor_hud": "#A98BFF",
+  "hud": {
+    "rosto": [
+      0.37,
+      0.075,
+      0.27,
+      0.17
+    ],
+    "objeto": [
+      0.465,
+      0.615,
+      0.135,
+      0.11
+    ],
+    "mao": [
+      0.71,
+      0.52,
+      0.11,
+      0.12
+    ],
+    "passaporte": [
+      0.33,
+      0.08,
+      0.37,
+      0.32
+    ],
+    "obj_label": "OBJ: CAFÉ",
+    "id": "S-2210-01",
+    "data": "2026/10/08",
+    "card_titulo": "ATIVIDADE OFFLINE DETECTADA",
+    "linhas": [
+      "SYNC SOCIAL: 43%",
+      "INTERAÇÃO: RARA",
+      "SAÍDA EMOCIONAL: CONTROLADA"
+    ]
+  }
+}
