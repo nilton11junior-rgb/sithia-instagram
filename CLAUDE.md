@@ -72,3 +72,6 @@ Aprendeu algo (erro, acerto, decisão)? Registre em `docs/erros-e-acertos/` usan
 - Gemini: o Chrome bloqueia vários downloads. Para pegar imagem em tamanho original, exibir a imagem a 100% num overlay e tirar capturas em faixas (topo e base), depois juntar com PIL.
 - Gemini recusa prompts de "navalha na barba/pele"; usar objetos (escova, espuma, tigela).
 - Imagens de pessoas: continuar a conversa "Barbearia Premium: Nilton e Bruno" no Gemini (já tem as referências) em vez de reenviar fichas.
+
+## Padrão visual das capas (aprovado em 09/10/2026)
+Todos os posts seguem docs/conteudo/padrao-visual-capa.md: foto cinematográfica com o Nilton (boca fechada, sério, pele retocada natural), palavra gigante atrás da pessoa (src/capa_palavra.py), imagens geradas no ChatGPT e referências da pasta PROMPTS do Pinterest.
