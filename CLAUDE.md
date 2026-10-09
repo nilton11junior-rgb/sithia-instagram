@@ -2,6 +2,14 @@
 
 Idioma de trabalho e de todo o conteúdo: **português do Brasil**.
 
+## FLUXO OBRIGATÓRIO PARA PLANEJAR QUALQUER POST (regra do Nilton, 09/10/2026)
+Vale para notícia, prompt e portfólio, sem exceção:
+1. TEMA: pesquisar e escolher o melhor tema para o momento atual (o que está em alta agora, fresco, relevante para o público).
+2. REFERÊNCIAS: buscar no Pinterest (pasta PROMPTS: br.pinterest.com/nexusgeralia/prompts/ e busca no próprio Pinterest) estilos de ALTA qualidade para aquele tema e formato.
+3. QUALIDADE: SEMPRE a melhor qualidade possível. Nada de imagem procedural ou "ok"; se não está no nível das referências, refazer.
+4. IMAGEM: gerar no ChatGPT, adaptando a referência escolhida ao Nilton (ficha marca/personagens/nilton-frente.png) e à marca SITH.IA (sem logos/personagens de terceiros).
+5. CARROSSEL: montar o carrossel completo (slides + legenda) e mostrar ao Nilton para aprovar.
+
 ## Glossário
 - Quando o Nilton diz "sith", ele fala da **SITH.IA**: a empresa e o perfil do Instagram.
 - Grafia certa: **SITH.IA**. @ do Instagram: **@sith.ia.oficial**. Nunca escrever "SITH.AI" nem "sitth".
