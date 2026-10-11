@@ -8,6 +8,7 @@ Vale para notícia, prompt e portfólio, sem exceção:
 2. REFERÊNCIAS: buscar no Pinterest (pasta PROMPTS: br.pinterest.com/nexusgeralia/prompts/ e busca no próprio Pinterest) estilos de ALTA qualidade para aquele tema e formato.
 3. QUALIDADE: SEMPRE a melhor qualidade possível. Nada de imagem procedural ou "ok"; se não está no nível das referências, refazer.
 4. IMAGEM: gerar no ChatGPT, adaptando a referência escolhida ao Nilton (guia marca/personagens/nilton-guia-2026-10.png (Bruno: bruno-guia-2026-10.jpg); guias antigos ficam como histórico) e à marca SITH.IA (sem logos/personagens de terceiros).
+- Imagens do ChatGPT: NUNCA deixar na pasta Downloads do Nilton. Levar a imagem direto para o repositório (página de upload do GitHub, dados passados pelo endereço da página) e guardar cópia no PC em sithia-automacao-instagram/imagens-ia/<post>/ (pedido do Nilton, 11/10/2026: sem passar pelos Downloads).
 - ChatGPT: usar SEMPRE a pasta (projeto) "Bs mind" → chat "Criar prompt cinematográfico" (pedido do Nilton, 11/10/2026).
 5. CARROSSEL: montar o carrossel completo (slides + legenda) e mostrar ao Nilton para aprovar.
 

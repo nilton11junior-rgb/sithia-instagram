@@ -14,3 +14,6 @@ criativos/gerados/2026-10-07/
 
 # Rascunhos do Claude (nao publicar)
 Claude outputs/
+
+# imagens geradas no ChatGPT (cópia local no PC, fora do Git)
+imagens-ia/
