@@ -2,7 +2,7 @@
   "id": "ter-noticia-gemini-agent-colega",
   "tipo": "noticia",
   "publicar_em": "2026-10-13T12:00:00-03:00",
-  "aprovado": false,
+  "aprovado": true,
   "cor": "#8B7CFF",
   "imagem_capa": "criativos/fontes/noticia-gemini-agent/capa.jpg",
   "faixa": "SITH.IA NEWS · OUT 2026",
