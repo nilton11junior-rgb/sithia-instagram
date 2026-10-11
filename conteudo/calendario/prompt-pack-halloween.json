@@ -1,0 +1,45 @@
+{
+  "id": "dom-prompt-pack-halloween",
+  "tipo": "prompt-pack",
+  "publicar_em": "2026-10-18T10:00:00-03:00",
+  "aprovado": false,
+  "cor": "#FF7A1A",
+  "pasta_imagens": "criativos/fontes/prompt-pack-halloween",
+  "capa": {
+    "imagem": "capa.jpg",
+    "rotulo": "Pack de Halloween: *4 fantasias* com IA",
+    "sub": "Bruno, sócio da SITH.IA · copie e cole"
+  },
+  "estilos": [
+    {
+      "imagem": "vampiro.jpg",
+      "nome": "Vampiro",
+      "cor": "#FF3B4A",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Retrato cinematográfico de Halloween, elegante e sem sangue, vertical 4:5: vampiro elegante, sobretudo preto longo com gola alta de veludo vinho, castelo gótico à luz de velas, névoa no chão, luz vermelha suave de recorte. Olhar intenso para a câmera, pele com retoque natural. No topo, a palavra VAMPIRO gigante em letras pinceladas brancas com brilho vermelho, com a cabeça na frente das letras. Fotorrealista, sem outros textos e sem logos."
+    },
+    {
+      "imagem": "feitico.jpg",
+      "nome": "Feiticeiro",
+      "cor": "#9B6BFF",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Retrato cinematográfico de Halloween, elegante e sem sangue, vertical 4:5: feiticeiro moderno de capuz preto, energia roxa girando entre as mãos, floresta escura com névoa, faíscas violetas no ar. Olhar intenso para a câmera, pele com retoque natural. No topo, a palavra FEITIÇO gigante em letras pinceladas brancas com brilho roxo, com a cabeça na frente das letras. Fotorrealista, sem outros textos e sem logos."
+    },
+    {
+      "imagem": "assombro.jpg",
+      "nome": "Assombrado",
+      "cor": "#7FE3FF",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Retrato cinematográfico de Halloween, elegante e sem sangue, vertical 4:5: mansão abandonada à noite, terno preto antigo, luz fria azulada da lua pela janela, poeira no ar, clima de filme de suspense. Olhar intenso para a câmera, pele com retoque natural. No topo, a palavra ASSOMBRO gigante em letras pinceladas brancas com brilho azul gelado, com a cabeça na frente das letras. Fotorrealista, sem outros textos e sem logos."
+    },
+    {
+      "imagem": "cacador.jpg",
+      "nome": "Caçador",
+      "cor": "#FF9A2E",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Retrato cinematográfico de Halloween, elegante e sem sangue, vertical 4:5: caçador de monstros, sobretudo de couro gasto e lanterna antiga na mão, estrada de terra com abóboras acesas e névoa laranja. Olhar intenso para a câmera, pele com retoque natural. No topo, a palavra CAÇADOR gigante em letras pinceladas brancas com brilho laranja, com a cabeça na frente das letras. Fotorrealista, sem outros textos e sem logos."
+    }
+  ],
+  "cta": {
+    "titulo": "Qual fantasia é a *sua?*",
+    "sub": "Comente o número e salve o post para fazer a sua antes do Halloween.",
+    "botao": "SIGA O SITH.IA"
+  },
+  "legenda": "Sua fantasia de Halloween pronta sem sair de casa, com 4 prompts e o seu rosto 🎃\n\nRetratos de cinema, elegantes e sem sangue. Um prompt para cada fantasia.\n\nComo usar:\n→ escolha a fantasia e copie o prompt do slide\n→ cole no ChatGPT ou no Gemini com uma foto sua anexada\n→ troque a palavra do topo pelo seu nome\n\nManda para quem vai com você na festa do dia 31.\n\n#sithia #fantasiadehalloween #promptsdeia #fotocomia #halloween"
+}
