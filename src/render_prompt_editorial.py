@@ -137,7 +137,7 @@ def main(path):
     img = uri(pasta / d["imagem"]); hero_path = pasta / d["imagem"]
     img2 = uri(pasta / d["imagem2"]) if d.get("imagem2") else img
     out = ROOT / "criativos/gerados" / Path(d["pasta_imagens"]).name / d["id"]; out.mkdir(parents=True, exist_ok=True)
-    htmls = [capa(d, img, hero_path), resultado(d, img2), prompt_slide(d, img), cta(d, img2)]
+    htmls = [capa(d, img, hero_path), resultado(d, img2), prompt_slide(d, img2), cta(d, img2)]
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1080, "height": 1350})
         for i, h in enumerate(htmls, 1):

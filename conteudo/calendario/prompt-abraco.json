@@ -1,0 +1,16 @@
+{
+  "id": "seg-prompt-abraco-crianca",
+  "tipo": "prompt-editorial",
+  "publicar_em": "2026-10-12T12:00:00-03:00",
+  "aprovado": false,
+  "cor": "#F2C94C",
+  "pasta_imagens": "criativos/fontes/prompt-abraco",
+  "imagem": "capa.jpg",
+  "imagem2": "resultado.jpg",
+  "capa": {"linha1": "Abrace sua", "linha2": "versão criança", "tagline": ""},
+  "prompt_titulo": "Copie e *cole*",
+  "prompt_texto": "Use as duas fotos anexadas: a primeira sou eu hoje e a segunda sou eu criança. Crie uma foto realista de mim adulto abraçando com carinho a minha versão criança no colo, os dois olhando para a câmera com um sorriso leve. Mantenha exatamente os rostos das duas fotos. Estilo foto instantânea anos 2000: fundo de cortina branca, flash direto, grão de filme leve, cores quentes. Formato vertical 4:5, sem texto.",
+  "ficha": ["ChatGPT ou Gemini", "2 fotos: hoje + infância", "4:5 vertical"],
+  "cta": {"titulo": "Fez o seu? *Marca a gente*", "sub": "Salve este post e mostre o resultado nos stories marcando @sith.ia.oficial.", "botao": "SIGA O SITH.IA"},
+  "legenda": "Hoje é Dia das Crianças, e a sua versão pequena merece esse abraço 💛\n\nCom duas fotos e um prompt, a IA junta você de hoje e você criança na mesma foto, no estilo foto instantânea dos anos 2000.\n\nComo fazer:\n→ separe uma foto sua de hoje e uma de quando era criança\n→ copie o prompt do slide 3\n→ cole no ChatGPT ou no Gemini com as duas fotos anexadas\n\nSalve este post para fazer depois.\nMarque @sith.ia.oficial no resultado.\n\n#sithia #prompts #diadascriancas #inteligenciaartificial #chatgpt #fotoia"
+}
