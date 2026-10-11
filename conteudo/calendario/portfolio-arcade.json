@@ -2,7 +2,7 @@
   "id": "dom-portfolio-arcade-conceito",
   "tipo": "portfolio",
   "publicar_em": "2026-10-11T10:00:00-03:00",
-  "aprovado": false,
+  "aprovado": true,
   "cor": "#C86BFF",
   "conceito": true,
   "pasta_imagens": "criativos/fontes/portfolio-arcade",
