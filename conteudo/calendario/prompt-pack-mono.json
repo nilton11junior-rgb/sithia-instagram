@@ -2,7 +2,7 @@
   "id": "seg-prompt-pack-monocromatico",
   "tipo": "prompt-pack",
   "publicar_em": "2026-10-12T12:00:00-03:00",
-  "aprovado": false,
+  "aprovado": true,
   "cor": "#B06BFF",
   "pasta_imagens": "criativos/fontes/prompt-pack-mono",
   "capa": {
