@@ -11,6 +11,13 @@ Vale para notícia, prompt e portfólio, sem exceção:
 - Imagens do ChatGPT: NUNCA deixar na pasta Downloads do Nilton. Levar a imagem direto para o repositório (página de upload do GitHub, dados passados pelo endereço da página) e guardar cópia no PC em sithia-automacao-instagram/imagens-ia/<post>/ (pedido do Nilton, 11/10/2026: sem passar pelos Downloads).
 - ChatGPT: usar SEMPRE a pasta (projeto) "Bs mind" → chat "Criar prompt cinematográfico" (pedido do Nilton, 11/10/2026).
 5. CARROSSEL: montar o carrossel completo (slides + legenda) e mostrar ao Nilton para aprovar.
+6. LEGENDA COM O PLUGIN marketing-instagram (pedido do Nilton, 11/10/2026). Skills em instagram-skills: ig-carousel-planner, ig-caption-writer, ig-hashtag-strategist e ig-humanizer.
+   - Gancho que se sustenta sozinho nos primeiros 125 caracteres.
+   - UM CTA só, de preferência de envio ("manda para…") ou de salvamento; nada de "comente o número/SIM".
+   - 5 hashtags: #sithia + 3 de nicho + no máximo 1 ampla, variando por tema.
+   - Passar no humanizer: sem frase-ponte ("O resultado?", "O mais curioso:"), sem staccato, no máximo 1 travessão.
+   - Nunca inventar número ou fato.
+   - Plano semanal: ig-content-planner (meta de salvamentos + envios; ver docs/conteudo/plano-*.md).
 
 ## Glossário
 - Quando o Nilton diz "sith", ele fala da **SITH.IA**: a empresa e o perfil do Instagram.
