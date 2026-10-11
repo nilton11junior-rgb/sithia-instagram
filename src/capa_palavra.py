@@ -3,7 +3,7 @@
 Recorta a pessoa da foto (rembg), põe a palavra entre o fundo e a pessoa e salva um JPEG 1080x1350.
 Uso: python3 src/capa_palavra.py <foto> <saida.jpg> "GPT-6" [cor_palavra] [topo_px] [tamanho_px]
 Requer: pip install "rembg[cpu]" (baixa o modelo isnet-general-use na 1a vez)."""
-import base64, io, sys
+import base64, io, os, sys
 from pathlib import Path
 from PIL import Image
 from playwright.sync_api import sync_playwright
@@ -21,7 +21,7 @@ def main(foto, saida, palavra, cor="#ffffff", topo=120, tam=430):
     else:
         nh = int(w / alvo); im = im.crop((0, 0, w, nh))
     im = im.resize((1080, 1350), Image.LANCZOS)
-    cut = remove(im, session=new_session("isnet-general-use"))
+    cut = remove(im, session=new_session(os.environ.get("REMBG_MODEL", "isnet-general-use")))
     from PIL import ImageFilter  # encolhe a borda 2px para não sobrar halo do fundo
     a = cut.getchannel("A").filter(ImageFilter.MinFilter(5)).filter(ImageFilter.GaussianBlur(1)); cut.putalpha(a)
     bf, bc = io.BytesIO(), io.BytesIO()

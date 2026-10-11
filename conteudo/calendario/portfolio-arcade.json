@@ -1,0 +1,65 @@
+{
+  "id": "dom-portfolio-arcade-conceito",
+  "tipo": "portfolio",
+  "publicar_em": "2026-10-11T10:00:00-03:00",
+  "aprovado": false,
+  "cor": "#C86BFF",
+  "conceito": true,
+  "pasta_imagens": "criativos/fontes/portfolio-arcade",
+  "pessoa_estilo": "width:1080px;height:1350px;object-fit:cover;left:0;top:0",
+  "imagens": {
+    "produto": "produto.jpg",
+    "pessoa": "pessoa.jpg",
+    "detalhe": "detalhe.jpg"
+  },
+  "capa": {
+    "imagem": "capa.jpg",
+    "tag": "PORTFÓLIO · CONCEITO",
+    "titulo": "Campanha de *Dia das Crianças* pra quem cresceu no fliperama"
+  },
+  "bastidor": {
+    "tag": "PORTFÓLIO · CONCEITO",
+    "titulo": "Campanha loja de games retrô",
+    "sub": "Conceito criado com IA, sem marca real"
+  },
+  "peças": [
+    {
+      "rotulo": "01 · O PRODUTO",
+      "texto": "O controle que todo mundo lembra"
+    },
+    {
+      "rotulo": "02 · O MOMENTO",
+      "texto": "A criança interior também é cliente"
+    },
+    {
+      "rotulo": "03 · O DETALHE",
+      "texto": "Botão, ficha e neon"
+    }
+  ],
+  "processo": {
+    "titulo": "Do briefing à *campanha*",
+    "passos": [
+      [
+        "01",
+        "BRIEFING",
+        "Data do momento (Dia das Crianças) e o público adulto que joga."
+      ],
+      [
+        "02",
+        "REFERÊNCIAS",
+        "Editorial de moda com neon e flash, garimpado no Pinterest."
+      ],
+      [
+        "03",
+        "GERAÇÃO E AJUSTE",
+        "Fotos com IA refinadas até ficarem nível campanha."
+      ]
+    ]
+  },
+  "cta": {
+    "titulo": "Tem data no calendário? *A gente cria a campanha.*",
+    "botao": "CHAME NA DM",
+    "nota": "Conceito criado com IA. Não é um cliente real."
+  },
+  "legenda": "Amanhã é Dia das Crianças, e quem cresceu no fliperama também é público 🕹️\n\nFizemos uma campanha conceito para uma loja de games retrô fictícia: editorial de moda, neon e flash, com produto, momento e detalhe saindo do mesmo briefing.\n\nCriado com IA pela SITH.IA. Não é marca nem cliente real.\n\nO que dá para tirar daqui:\n→ data comemorativa vira campanha quando fala com quem compra, não só com quem ganha\n→ uma direção de arte segura todas as peças juntas\n→ a IA acelera, a referência certa decide a qualidade\n\nQuer uma campanha assim para a sua marca?\nChama na DM.\n\n#sithia #conceito #diadascriancas #publicidade #criativoscomia #inteligenciaartificial"
+}

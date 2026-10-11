@@ -18,7 +18,7 @@ FONTS = "".join(
 def fmt(t, cor): return re.sub(r"\*(.+?)\*", rf'<em style="color:{cor};font-style:normal">\1</em>', html.escape(t))
 
 BASE = lambda cor: f"""{FONTS}*{{margin:0;padding:0;box-sizing:border-box}}
-body{{width:1080px;height:1350px;overflow:hidden;position:relative;background:#120d09;color:#fff;font-family:'Inter','Helvetica',sans-serif}}
+body{{width:1080px;height:1350px;overflow:hidden;position:relative;background:#0b0910;color:#fff;font-family:'Inter','Helvetica',sans-serif}}
 .foot{{position:absolute;left:80px;right:80px;bottom:64px;display:flex;justify-content:space-between;font-family:'Mono';font-size:20px;letter-spacing:.15em;color:#ffffffcc;z-index:5}}
 .acc{{color:{cor}}}"""
 
@@ -46,6 +46,18 @@ def bastidor(d, pasta, n):
         f'<div class="mon"><div class="scr"><div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span>&nbsp;&nbsp;campanha_conceito / peças</div><div class="row">{thumbs}</div></div></div>'
         f'<div class="stand"></div><div class="base"></div><div class="kb"></div>'
         f'<div class="sub">{html.escape(b["sub"])}</div>'
+        f'<div class="foot"><span>ARRASTE PRO LADO &rarr;</span><span>@SITH.IA.OFICIAL</span></div></body></html>')
+
+def capa_foto(d, pasta, n):
+    """Capa no padrão aprovado (09/10): foto com palavra gigante atrás da pessoa (feita com src/capa_palavra.py)."""
+    cor, c = d["cor"], d["capa"]
+    return (f'<html><head><meta charset="utf-8"><style>{BASE(cor)}'
+        f'.img{{position:absolute;left:0;top:0;width:1080px;height:1350px;object-fit:cover}}'
+        f'.shade{{position:absolute;inset:0;background:linear-gradient(180deg,#0000 0,#0000 55%,#000c 82%,#000 100%)}}'
+        f'.tag{{position:absolute;left:80px;bottom:330px;font-family:Mono;font-size:24px;letter-spacing:.3em;color:{cor};text-shadow:0 2px 14px #000}}'
+        f'.tit{{position:absolute;left:80px;right:80px;bottom:150px;font-family:Anton;font-size:84px;line-height:1.02;text-transform:uppercase;text-shadow:0 6px 40px #000c}}'
+        f'</style></head><body><img class="img" src="{uri(pasta, c["imagem"])}"><div class="shade"></div>'
+        f'<div class="tag">{html.escape(c["tag"])}</div><div class="tit">{fmt(c["titulo"], cor)}</div>'
         f'<div class="foot"><span>ARRASTE PRO LADO &rarr;</span><span>@SITH.IA.OFICIAL</span></div></body></html>')
 
 def peca(d, pasta, n, chave, idx, estilo):
@@ -76,8 +88,8 @@ def processo(d, pasta, n):
 def cta(d, pasta, n):
     cor, c = d["cor"], d["cta"]
     return (f'<html><head><meta charset="utf-8"><style>{BASE(cor)}'
-        f'body{{background:radial-gradient(ellipse at 50% 80%,#3a2512 0,#120d09 70%)}}'
-        f'.tit{{position:absolute;top:300px;left:80px;right:80px;font-family:Anton;font-size:120px;line-height:1.03;text-transform:uppercase}}'
+        f'body{{background:radial-gradient(ellipse at 50% 80%,{cor}40 0,#0b0910 70%)}}'
+        f'.tit{{position:absolute;top:300px;left:80px;right:80px;font-family:Anton;font-size:104px;line-height:1.03;text-transform:uppercase}}'
         f'.btn{{position:absolute;top:900px;left:80px;background:{cor};color:#1a1008;font-family:Mono;font-weight:700;font-size:32px;letter-spacing:.18em;padding:28px 56px;border-radius:70px}}'
         f'.nota{{position:absolute;top:1060px;left:80px;right:80px;font-family:Mono;font-size:24px;letter-spacing:.08em;color:#ffffffaa}}'
         f'</style></head><body><div class="tit">{fmt(c["titulo"], cor)}</div><div class="btn">{html.escape(c["botao"])}</div>'
@@ -90,7 +102,7 @@ def main(path):
     out = ROOT / "criativos/gerados" / Path(d["pasta_imagens"]).name / d["id"]; out.mkdir(parents=True, exist_ok=True)
     cover = "width:1080px;height:1350px;object-fit:cover;left:0;top:0"
     pessoa = d.get("pessoa_estilo", "width:1250px;height:auto;left:-250px;top:-250px")  # burger: empurra o letreiro do fundo pra fora do quadro
-    slides = [bastidor(d, pasta, 1), peca(d, pasta, 2, "produto", 0, cover), peca(d, pasta, 3, "pessoa", 1, pessoa),
+    slides = [capa_foto(d, pasta, 1) if d.get("capa") else bastidor(d, pasta, 1), peca(d, pasta, 2, "produto", 0, cover), peca(d, pasta, 3, "pessoa", 1, pessoa),
               peca(d, pasta, 4, "detalhe", 2, cover), processo(d, pasta, 5), cta(d, pasta, 6)]
     with sync_playwright() as p:
         br = p.chromium.launch(); pg = br.new_page(viewport={"width": 1080, "height": 1350})
