@@ -33,50 +33,50 @@ def pagina(w, h, corpo, css=""):
 
 def topo(d): return f'<div class="top"><span class="b"><img src="{LOGO}">SITH.IA</span><span>{d}</span></div>'
 
-# ---------- carrossel fixado ----------
+# ---------- carrossel fixado (v2, 11/10/2026: renders 3D roxos, sem fotos de campanha) ----------
 SERV = [
-    ("01 · CAMPANHA DE PRODUTO", "Seu produto com cara de [campanha de luxo]", "Perfume, tênis, cosmético, comida. Foto de campanha sem estúdio e sem sessão de fotos.", "portfolio-perfume/produto.jpg"),
-    ("02 · MODELO E CENÁRIO", "Seu produto [em uso], no cenário certo", "Modelos e locações criados com IA para mostrar o produto em ação, do jeito da sua marca.", "portfolio-tenis/pessoa.jpg"),
-    ("03 · DATAS DO CALENDÁRIO", "Campanha pronta para [cada data]", "Black Friday, Natal, Dia das Crianças, Dia dos Pais. Uma campanha nova sem montar estúdio de novo.", "portfolio-arcade/pessoa.jpg"),
-    ("04 · NEGÓCIO LOCAL", "Fotos que fazem [parar o scroll]", "Hamburgueria, barbearia, loja, clínica. Cardápio e feed com nível de agência.", "portfolio-burger/burger-produto.jpg"),
-    ("05 · VÍDEOS E REELS", "Reels e anúncios em [vídeo] com IA", "Vídeo curto para anúncio e Reels, com movimento, trilha e a identidade da sua marca.", "portfolio-arcade/produto.jpg"),
-    ("06 · PERSONAGEM DA MARCA", "Um [rosto digital] para a sua marca", "Influencer virtual ou avatar do dono, com o mesmo rosto em todo post e todo vídeo.", "noticia-gemini-agent/foto.jpg"),
+    ("SITES E LANDING PAGES", "Sites que [viram cliente]", "Site institucional, landing page de vendas e loja virtual. Rápido, lindo no celular e pronto para anúncio.", ["Site institucional", "Landing page", "Loja virtual"], "fixado-servicos/sites.jpg"),
+    ("REBRANDING", "Sua marca com [cara profissional]", "Logo, cores, tipografia e manual da marca. A mudança que faz o cliente confiar em você antes da primeira conversa.", ["Logo", "Identidade visual", "Manual da marca"], "fixado-servicos/rebranding.jpg"),
+    ("CAMPANHAS COM IA", "Fotos de campanha [sem estúdio]", "Produto, modelo e cenário criados com IA para lançamento, datas comemorativas e anúncios.", ["Foto de produto", "Lançamentos", "Datas do ano"], "fixado-servicos/campanhas.jpg"),
+    ("VÍDEOS E REELS", "Vídeo que [para o scroll]", "Reels, anúncios e vídeos de lançamento com movimento, trilha e a identidade da sua marca.", ["Reels", "Anúncios", "Vídeo de lançamento"], "fixado-servicos/videos.jpg"),
+    ("INFLUENCER VIRTUAL", "Um [rosto digital] para a sua marca", "Personagem ou avatar que aparece em todo post e vídeo, sempre igual, sem agenda de gravação.", ["Personagem", "Avatar do dono", "Conteúdo recorrente"], "fixado-servicos/influencer.jpg"),
 ]
 
-def fx_capa(n):
-    fotos = ["portfolio-perfume/produto.jpg", "portfolio-tenis/pessoa.jpg", "portfolio-arcade/pessoa.jpg", "portfolio-burger/burger-produto.jpg"]
-    grade = "".join(f'<div class="c"><img src="{img(f)}"></div>' for f in fotos)
-    css = (".g{position:absolute;left:0;top:0;width:1080px;height:1350px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:6px}"
-           ".c{overflow:hidden}.c img{width:100%;height:100%;object-fit:cover}"
-           ".sh{position:absolute;inset:0;background:linear-gradient(180deg,#07060bcc 0,#07060b55 22%,#07060b33 45%,#07060bf2 72%,#07060b 100%)}"
-           f".w{{position:absolute;left:64px;right:64px;bottom:150px;z-index:5}}h1{{font-size:118px;margin-top:26px}}"
-           ".s{font-size:27px;line-height:1.45;color:#e8e8e8;margin-top:24px}")
-    return pagina(1080, 1350, f'<div class="g">{grade}</div><div class="sh"></div>{topo(f"01 / {n:02d}")}'
-        f'<div class="w"><span class="tag">O QUE FAZEMOS</span><h1>{em("O que a [SITH.IA] cria para a sua marca")}</h1>'
-        f'<div class="s">Campanhas, vídeos e personagens feitos com IA.<br>Projetos conceito do nosso estúdio.</div></div>'
+CSS_FX = (".bg{top:-40px;left:70px;width:940px!important;height:auto!important;-webkit-mask-image:radial-gradient(ellipse 75% 70% at 50% 42%,#000 60%,transparent 100%)}"
+          ".sh{position:absolute;inset:0;background:linear-gradient(180deg,#07060b80 0,#0000 12%,#0000 46%,#07060bd9 58%,#07060b 70%)}"
+          ".n{font-family:Anton;font-size:30px;letter-spacing:.2em;color:#9B6BFF;margin-bottom:10px}"
+          ".chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.chips span{font-size:21px;letter-spacing:.06em;color:#fff;border:1px solid #9B6BFF88;background:#9B6BFF1f;border-radius:40px;padding:10px 20px}")
+
+def fx_capa(n, w=1080, h=1350):
+    css = CSS_FX + (f".w{{position:absolute;left:64px;right:64px;bottom:{140 if h==1350 else 300}px;z-index:5}}h1{{font-size:{128 if h==1350 else 140}px;margin-top:26px}}"
+                    ".s{font-size:28px;line-height:1.45;color:#e8e8e8;margin-top:24px}")
+    return pagina(w, h, f'<img class="bg" src="{img("fixado-servicos/capa.jpg")}"><div class="sh"></div>{topo(f"01 / {n:02d}")}'
+        f'<div class="w"><span class="tag">O QUE FAZEMOS</span><h1>{em("Sua marca no [próximo nível]")}</h1>'
+        f'<div class="s">5 serviços da SITH.IA para empresas que querem vender mais com presença digital.</div></div>'
         f'<div class="bot"><span>DESLIZE &rarr;</span><span>@SITH.IA.OFICIAL</span></div>', css)
 
 def fx_serv(s, i, n, w=1080, h=1350):
-    rot, tit, txt, foto = s
-    css = (".sh{position:absolute;inset:0;background:linear-gradient(180deg,#07060b99 0,#0000 20%,#0000 45%,#07060bee 74%,#07060b 100%)}"
-           f".w{{position:absolute;left:64px;right:64px;bottom:{150 if h==1350 else 260}px;z-index:5}}h2{{font-size:{92 if h==1350 else 104}px;margin-top:24px}}"
-           ".s{font-size:28px;line-height:1.5;color:#ececec;margin-top:24px;max-width:900px}")
+    rot, tit, txt, itens, foto = s
+    css = CSS_FX + (f".w{{position:absolute;left:64px;right:64px;bottom:{130 if h==1350 else 300}px;z-index:5}}h2{{font-size:{100 if h==1350 else 112}px;margin-top:22px}}"
+                    ".s{font-size:27px;line-height:1.5;color:#ececec;margin-top:22px;max-width:930px}")
+    chips = "".join(f"<span>{html.escape(c)}</span>" for c in itens)
     return pagina(w, h, f'<img class="bg" src="{img(foto)}"><div class="sh"></div>{topo(f"{i:02d} / {n:02d}")}'
-        f'<div class="w"><span class="tag">{html.escape(rot)}</span><h2>{em(tit)}</h2><div class="s">{html.escape(txt)}</div></div>'
-        f'<div class="bot"><span>{"DESLIZE &rarr;" if h==1350 else "SITH.IA · O QUE FAZEMOS"}</span><span>@SITH.IA.OFICIAL</span></div>', css)
+        f'<div class="w"><div class="n">SERVIÇO {i-1:02d}</div><span class="tag">{html.escape(rot)}</span><h2>{em(tit)}</h2>'
+        f'<div class="s">{html.escape(txt)}</div><div class="chips">{chips}</div></div>'
+        f'<div class="bot"><span>{"DESLIZE &rarr;" if h==1350 else "SITH.IA · SERVIÇOS"}</span><span>@SITH.IA.OFICIAL</span></div>', css)
 
-def como_funciona(i, n, w=1080, h=1350, titulo="Como funciona"):
-    passos = [("01", "Briefing", "Você conta pela DM o produto, o objetivo e o prazo."),
-              ("02", "Referências", "Montamos o conceito e as referências visuais com você."),
-              ("03", "Entrega", "Campanha pronta em foto e vídeo, nos formatos das suas redes.")]
+def como_funciona(i, n, w=1080, h=1350, titulo="Seu projeto começa [na DM]"):
+    passos = [("01", "Briefing", "Você conta o que precisa: site, marca, campanha ou vídeo."),
+              ("02", "Proposta", "Mandamos o plano, o prazo e o investimento."),
+              ("03", "Entrega", "Projeto pronto, revisado com você e no ar.")]
     lis = "".join(f'<div class="p"><b>{a}</b><div><h3>{b}</h3><span>{c}</span></div></div>' for a, b, c in passos)
-    css = (f".bg{{filter:blur(18px) brightness(.28);transform:scale(1.1)}}.w{{position:absolute;left:64px;right:64px;top:{230 if h==1350 else 420}px;z-index:5}}"
-           f"h1{{font-size:{120 if h==1350 else 130}px}}.p{{display:flex;gap:28px;align-items:flex-start;margin-top:44px}}"
-           f".p b{{font-family:Anton;font-weight:400;font-size:60px;color:{ROXO};min-width:84px}}"
-           ".p h3{font-family:Anton;font-weight:400;font-size:44px;text-transform:uppercase}.p span{font-size:26px;line-height:1.45;color:#ddd}"
-           f".btn{{display:inline-block;margin-top:60px;background:{ROXO};color:#000;font-weight:700;font-size:28px;letter-spacing:.16em;padding:24px 50px;border-radius:60px}}")
-    return pagina(w, h, f'<img class="bg" src="{img("portfolio-perfume/pessoa.jpg")}">{topo(f"{i:02d} / {n:02d}" if h==1350 else "ORÇAMENTO")}'
-        f'<div class="w"><h1>{em(titulo)}</h1>{lis}<span class="btn">CHAMA NA DM: CAMPANHA</span></div>'
+    css = CSS_FX + (f".bg{{opacity:.55}}.w{{position:absolute;left:64px;right:64px;bottom:{120 if h==1350 else 300}px;z-index:5}}"
+           f"h1{{font-size:{108 if h==1350 else 124}px}}.p{{display:flex;gap:26px;align-items:flex-start;margin-top:30px}}"
+           f".p b{{font-family:Anton;font-weight:400;font-size:52px;color:{ROXO};min-width:76px}}"
+           ".p h3{font-family:Anton;font-weight:400;font-size:40px;text-transform:uppercase}.p span{font-size:25px;line-height:1.45;color:#ddd}"
+           f".btn{{display:inline-block;margin-top:44px;background:{ROXO};color:#000;font-weight:700;font-size:27px;letter-spacing:.14em;padding:22px 46px;border-radius:60px}}")
+    return pagina(w, h, f'<img class="bg" src="{img("fixado-servicos/cta.jpg")}"><div class="sh"></div>{topo(f"{i:02d} / {n:02d}" if h==1350 else "ORÇAMENTO")}'
+        f'<div class="w"><h1>{em(titulo)}</h1>{lis}<span class="btn">MANDE &quot;PROJETO&quot; NA DM</span></div>'
         f'<div class="bot"><span>SALVE E MANDE PARA O SEU SÓCIO</span><span>@SITH.IA.OFICIAL</span></div>', css)
 
 # ---------- destaques ----------
@@ -116,7 +116,7 @@ def main():
     fixado = [fx_capa(n)] + [fx_serv(s, i + 2, n) for i, s in enumerate(SERV)] + [como_funciona(n, n)]
     dest = {
         "1-comece-aqui": [capa_destaque("comece"), story_quem()],
-        "2-servicos": [capa_destaque("servicos")] + [fx_serv(s, i + 1, len(SERV), 1080, 1920) for i, s in enumerate(SERV)],
+        "2-servicos": [capa_destaque("servicos"), fx_capa(1, 1080, 1920)] + [fx_serv(s, i + 2, len(SERV) + 1, 1080, 1920) for i, s in enumerate(SERV)],
         "3-portfolio": [capa_destaque("portfolio"),
                         story_foto("portfolio-perfume/pessoa.jpg", "CONCEITO · PERFUME", "Campanha de [perfume de luxo]", "Marca fictícia criada pela SITH.IA. Produto, rosto e detalhe, sem estúdio."),
                         story_foto("portfolio-tenis/produto.jpg", "CONCEITO · TÊNIS", "Lançamento de [tênis]", "Marca fictícia criada pela SITH.IA. Produto, ação e detalhe."),
