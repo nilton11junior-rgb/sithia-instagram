@@ -1,0 +1,45 @@
+{
+  "id": "qui-prompt-pack-filme",
+  "tipo": "prompt-pack",
+  "publicar_em": "2026-10-15T12:00:00-03:00",
+  "aprovado": false,
+  "cor": "#E8C26A",
+  "pasta_imagens": "criativos/fontes/prompt-pack-filme",
+  "capa": {
+    "imagem": "capa.jpg",
+    "rotulo": "Você como *pôster de filme*: 4 gêneros",
+    "sub": "Nilton, sócio da SITH.IA · copie e cole"
+  },
+  "estilos": [
+    {
+      "imagem": "noir.jpg",
+      "nome": "Noir",
+      "cor": "#E6E6E6",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Pôster de filme fotorrealista, vertical 4:5: filme noir em preto e branco de alto contraste, sobretudo escuro e chapéu fedora, rua molhada de chuva à noite sob um poste de luz, fumaça e sombras duras. Olhar sério para a câmera, pele com retoque natural. No topo, a palavra NOIR gigante em letras de pôster de cinema, com a cabeça da pessoa na frente das letras. Sem outros textos, sem logos e sem créditos."
+    },
+    {
+      "imagem": "orbita.jpg",
+      "nome": "Ficção científica",
+      "cor": "#46C8FF",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Pôster de filme fotorrealista, vertical 4:5: ficção científica, traje espacial preto com detalhes iluminados, capacete na mão, planeta gigante e estrelas ao fundo, luz azul fria e recorte laranja. Olhar sério para a câmera, pele com retoque natural. No topo, a palavra ÓRBITA gigante em letras de pôster de cinema, com a cabeça da pessoa na frente das letras. Sem outros textos, sem logos e sem créditos."
+    },
+    {
+      "imagem": "fuga.jpg",
+      "nome": "Ação",
+      "cor": "#FF6A2A",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Pôster de filme fotorrealista, vertical 4:5: filme de ação, jaqueta de couro, caminhando em direção à câmera com uma explosão enorme atrás, faíscas e fumaça, luz laranja intensa. Olhar sério para a câmera, pele com retoque natural. No topo, a palavra FUGA gigante em letras de pôster de cinema, com a cabeça da pessoa na frente das letras. Sem outros textos, sem logos e sem créditos."
+    },
+    {
+      "imagem": "deserto.jpg",
+      "nome": "Épico",
+      "cor": "#E8B86A",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Pôster de filme fotorrealista, vertical 4:5: épico no deserto ao pôr do sol, roupa de linho bege e lenço no pescoço, dunas, poeira dourada no ar, luz quente de fim de tarde. Olhar sério para a câmera, pele com retoque natural. No topo, a palavra DESERTO gigante em letras de pôster de cinema, com a cabeça da pessoa na frente das letras. Sem outros textos, sem logos e sem créditos."
+    }
+  ],
+  "cta": {
+    "titulo": "Qual seria o *seu filme?*",
+    "sub": "Comente o gênero e salve o post para fazer o seu pôster depois.",
+    "botao": "SIGA O SITH.IA"
+  },
+  "legenda": "Você como protagonista de filme, em 4 gêneros diferentes 🎬\n\nUm prompt para cada pôster. Troque a palavra do topo pelo seu nome ou pelo nome do seu filme.\n\nComo usar:\n→ escolha o gênero e copie o prompt do slide\n→ cole no ChatGPT ou no Gemini com uma foto sua anexada\n→ peça ajustes de roupa e cenário até ficar do seu jeito\n\nComente qual seria o seu filme.\nSalve este post para fazer depois.\n\n#sithia #prompts #inteligenciaartificial #chatgpt #posterdefilme #fotoia"
+}
