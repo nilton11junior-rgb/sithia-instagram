@@ -1,0 +1,28 @@
+{
+  "id": "qua-portfolio-perfume-conceito",
+  "tipo": "portfolio",
+  "publicar_em": "2026-10-14T12:00:00-03:00",
+  "aprovado": false,
+  "cor": "#E0A44A",
+  "conceito": true,
+  "pasta_imagens": "criativos/fontes/portfolio-perfume",
+  "pessoa_estilo": "width:1080px;height:1350px;object-fit:cover;left:0;top:0",
+  "imagens": {"produto": "produto.jpg", "pessoa": "pessoa.jpg", "detalhe": "detalhe.jpg"},
+  "capa": {"imagem": "capa.jpg", "tag": "PORTFÓLIO · CONCEITO", "titulo": "Campanha de *perfume de luxo* feita com IA"},
+  "bastidor": {"tag": "PORTFÓLIO · CONCEITO", "titulo": "Campanha perfume de luxo", "sub": "Conceito criado com IA, sem marca real"},
+  "peças": [
+    {"rotulo": "01 · O PRODUTO", "texto": "Vidro, âmbar e fumaça"},
+    {"rotulo": "02 · O ROSTO", "texto": "A presença vende o perfume"},
+    {"rotulo": "03 · O DETALHE", "texto": "Uma borrifada em câmera lenta"}
+  ],
+  "processo": {
+    "titulo": "Do briefing à *campanha*",
+    "passos": [
+      ["01", "BRIEFING", "Perfume masculino, público premium, clima de mistério."],
+      ["02", "REFERÊNCIAS", "Campanhas de perfume de luxo garimpadas no Pinterest."],
+      ["03", "GERAÇÃO E AJUSTE", "Fotos com IA refinadas até ficarem nível campanha."]
+    ]
+  },
+  "cta": {"titulo": "Seu produto merece *esse nível.*", "botao": "CHAME NA DM", "nota": "Conceito criado com IA. Não é um cliente real."},
+  "legenda": "Campanha de perfume de luxo, do produto ao rosto, sem estúdio e sem sessão de fotos ✨\n\nConceito criado pela SITH.IA para uma marca fictícia de perfume. Não é marca nem cliente real.\n\nO que faz uma campanha de luxo funcionar:\n→ fundo escuro e uma luz só: o produto vira a estrela\n→ o rosto passa a sensação que o perfume promete\n→ o detalhe em câmera lenta mostra o que a foto aberta não mostra\n\nQuer uma campanha assim para o seu produto?\nChama na DM.\n\n#sithia #conceito #perfume #fotografiadeproduto #publicidade #criativoscomia"
+}
