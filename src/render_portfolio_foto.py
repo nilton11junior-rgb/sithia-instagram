@@ -82,17 +82,18 @@ def processo(d, pasta, n):
         f'.n{{font-family:Anton;font-size:84px;color:{cor};min-width:110px}}'
         f'.t{{font-family:Mono;font-weight:700;font-size:30px;letter-spacing:.12em;margin-bottom:10px}}'
         f'.x{{font-size:30px;line-height:1.35;color:#ffffffcc}}'
-        f'</style></head><body><div class="tit">{fmt(pr["titulo"], cor)}</div><div class="lista">{passos}</div>'
+        f'.p{{background:#0009 !important;backdrop-filter:blur(4px)}}'
+        f'</style></head><body>'+f'<img src="{uri(pasta, d["imagens"]["pessoa"])}" style="position:absolute;inset:-40px;width:1160px;height:1430px;object-fit:cover;filter:blur(18px) brightness(.32)">'+f'<div class="tit">{fmt(pr["titulo"], cor)}</div><div class="lista">{passos}</div>'
         f'<div class="foot"><span>COMO A SITH.IA CRIA</span><span>{n}/6</span></div></body></html>')
 
 def cta(d, pasta, n):
     cor, c = d["cor"], d["cta"]
     return (f'<html><head><meta charset="utf-8"><style>{BASE(cor)}'
-        f'body{{background:radial-gradient(ellipse at 50% 80%,{cor}40 0,#0b0910 70%)}}'
+        f'body{{background:#0b0910}}'
         f'.tit{{position:absolute;top:300px;left:80px;right:80px;font-family:Anton;font-size:104px;line-height:1.03;text-transform:uppercase}}'
         f'.btn{{position:absolute;top:900px;left:80px;background:{cor};color:#1a1008;font-family:Mono;font-weight:700;font-size:32px;letter-spacing:.18em;padding:28px 56px;border-radius:70px}}'
         f'.nota{{position:absolute;top:1060px;left:80px;right:80px;font-family:Mono;font-size:24px;letter-spacing:.08em;color:#ffffffaa}}'
-        f'</style></head><body><div class="tit">{fmt(c["titulo"], cor)}</div><div class="btn">{html.escape(c["botao"])}</div>'
+        f'</style></head><body>'+(f'<img src="{uri(pasta, d["capa"]["imagem"])}" style="position:absolute;inset:-40px;width:1160px;height:1430px;object-fit:cover;filter:blur(18px) brightness(.32)">' if d.get("capa") else '')+f'<div class="tit">{fmt(c["titulo"], cor)}</div><div class="btn">{html.escape(c["botao"])}</div>'
         f'<div class="nota">{html.escape(c["nota"])}</div>'
         f'<div class="foot"><span>@SITH.IA.OFICIAL</span><span>{n}/6</span></div></body></html>')
 
