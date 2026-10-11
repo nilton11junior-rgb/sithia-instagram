@@ -1,0 +1,45 @@
+{
+  "id": "seg-prompt-pack-monocromatico",
+  "tipo": "prompt-pack",
+  "publicar_em": "2026-10-12T12:00:00-03:00",
+  "aprovado": false,
+  "cor": "#B06BFF",
+  "pasta_imagens": "criativos/fontes/prompt-pack-mono",
+  "capa": {
+    "imagem": "capa.jpg",
+    "rotulo": "Pack de prompts: *4 estilos* monocromáticos",
+    "sub": "Bruno, sócio da SITH.IA · copie e cole"
+  },
+  "estilos": [
+    {
+      "imagem": "verde.jpg",
+      "nome": "Energia",
+      "cor": "#39FF7A",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Retrato editorial monocromático verde neon, vertical 4:5: fundo de estúdio enfumaçado verde neon com feixes de luz, jaqueta puffer verde brilhante de vinil com capuz, olhando firme para a câmera, câmera levemente de baixo, luz dramática, pele com retoque natural. Atrás da cabeça, a palavra ENERGIA gigante em letras pinceladas brancas com brilho verde neon, com a cabeça na frente das letras. Fotorrealista, sem outros textos e sem logos."
+    },
+    {
+      "imagem": "azul.jpg",
+      "nome": "Visão",
+      "cor": "#3DA9FF",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Retrato editorial monocromático azul elétrico, vertical 4:5: fundo de estúdio enfumaçado azul elétrico com feixes de luz, jaqueta puffer azul brilhante de vinil, olhando firme para a câmera, câmera levemente de baixo, luz dramática, pele com retoque natural. Atrás da cabeça, a palavra VISÃO gigante em letras pinceladas brancas com brilho azul elétrico, com a cabeça na frente das letras. Fotorrealista, sem outros textos e sem logos."
+    },
+    {
+      "imagem": "vermelho.jpg",
+      "nome": "Impacto",
+      "cor": "#FF3B3B",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Retrato editorial monocromático vermelho intenso, vertical 4:5: fundo de estúdio enfumaçado vermelho intenso com feixes de luz, jaqueta puffer vermelha brilhante de vinil, olhando firme para a câmera, câmera levemente de baixo, luz dramática, pele com retoque natural. Atrás da cabeça, a palavra IMPACTO gigante em letras pinceladas brancas com brilho vermelho intenso, com a cabeça na frente das letras. Fotorrealista, sem outros textos e sem logos."
+    },
+    {
+      "imagem": "laranja.jpg",
+      "nome": "Modo",
+      "cor": "#FF8A1F",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Retrato editorial monocromático laranja queimado, vertical 4:5: fundo de estúdio enfumaçado laranja queimado com feixes de luz, jaqueta puffer laranja brilhante de vinil, olhando firme para a câmera, câmera levemente de baixo, luz dramática, pele com retoque natural. Atrás da cabeça, a palavra MODO gigante em letras pinceladas brancas com brilho laranja queimado, com a cabeça na frente das letras. Fotorrealista, sem outros textos e sem logos."
+    }
+  ],
+  "cta": {
+    "titulo": "Qual você vai *testar?*",
+    "sub": "Comente o número do estilo e salve o post para usar depois.",
+    "botao": "SIGA O SITH.IA"
+  },
+  "legenda": "4 estilos monocromáticos para transformar uma foto sua em capa de revista 🔥\n\nUm prompt para cada cor. É só trocar a cor e a palavra para criar o seu.\n\nComo usar:\n→ escolha o estilo e copie o prompt do slide\n→ cole no ChatGPT ou no Gemini com uma foto sua anexada\n→ troque a palavra gigante pelo seu nome ou pela sua marca\n\nComente o número do estilo que você vai testar.\nSalve este post para fazer depois.\n\n#sithia #prompts #inteligenciaartificial #chatgpt #fotoia #designcomia"
+}
