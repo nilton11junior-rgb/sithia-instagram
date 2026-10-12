@@ -2,6 +2,7 @@ name: publicar-instagram
 on:
   schedule:
     - cron: "*/15 * * * *"   # confere se há post vencido (o GitHub pode atrasar)
+    - cron: "7 8,10,12,14 * * *"   # reforço (05h07, 07h07, 09h07, 11h07 BRT): o GitHub às vezes para o */15; estes acordam antes dos posts e esperam o horário
   push:
     paths:
       - "conteudo/calendario/**"   # ao aprovar um post, o robô acorda na hora e espera o horário exato
