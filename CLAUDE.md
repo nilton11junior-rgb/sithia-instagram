@@ -2,6 +2,10 @@
 
 Idioma de trabalho e de todo o conteúdo: **português do Brasil**.
 
+## APROVAÇÕES (regra do Nilton, 16/10/2026) — PRIORIDADE MÁXIMA
+- Cada pedido de aprovação de post vai numa mensagem SEPARADA, só com aquele post (slides + legenda + dia/hora), sem misturar outros assuntos. Se misturar, ele não vê.
+- Aprovação de post é sempre a prioridade nº 1: pedir com antecedência para o post ficar agendado; outros assuntos (perfil, fixado, ideias) vêm depois, cada um na sua mensagem.
+
 ## FLUXO OBRIGATÓRIO PARA PLANEJAR QUALQUER POST (regra do Nilton, 09/10/2026)
 Vale para notícia, prompt e portfólio, sem exceção:
 1. TEMA: pesquisar e escolher o melhor tema para o momento atual (o que está em alta agora, fresco, relevante para o público).
