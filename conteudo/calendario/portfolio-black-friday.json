@@ -1,0 +1,65 @@
+{
+  "id": "ter-portfolio-black-friday-conceito",
+  "tipo": "portfolio",
+  "publicar_em": "2026-10-20T12:00:00-03:00",
+  "aprovado": false,
+  "cor": "#E8B04B",
+  "conceito": true,
+  "pasta_imagens": "criativos/fontes/portfolio-black-friday",
+  "pessoa_estilo": "width:1080px;height:1350px;object-fit:cover;left:0;top:0",
+  "imagens": {
+    "produto": "produto.jpg",
+    "pessoa": "pessoa.jpg",
+    "detalhe": "detalhe.jpg"
+  },
+  "capa": {
+    "imagem": "capa.jpg",
+    "tag": "PORTFÓLIO · CONCEITO",
+    "titulo": "Campanha de *Black Friday* feita com IA"
+  },
+  "bastidor": {
+    "tag": "PORTFÓLIO · CONCEITO",
+    "titulo": "Campanha Black Friday",
+    "sub": "Conceito criado com IA, sem marca real"
+  },
+  "peças": [
+    {
+      "rotulo": "01 · O PRODUTO",
+      "texto": "A sacola vira o símbolo da data"
+    },
+    {
+      "rotulo": "02 · O ROSTO",
+      "texto": "Atitude de campanha de luxo"
+    },
+    {
+      "rotulo": "03 · O DETALHE",
+      "texto": "O presente que todo mundo quer abrir"
+    }
+  ],
+  "processo": {
+    "titulo": "Do briefing à *campanha*",
+    "passos": [
+      [
+        "01",
+        "BRIEFING",
+        "Loja de moda quer uma Black Friday com cara de luxo, não de liquidação."
+      ],
+      [
+        "02",
+        "REFERÊNCIAS",
+        "Editoriais de moda escuros, fumaça vermelha e detalhes dourados, do Pinterest."
+      ],
+      [
+        "03",
+        "GERAÇÃO E AJUSTE",
+        "Fotos com IA refinadas até ficarem nível campanha, prontas para feed e anúncio."
+      ]
+    ]
+  },
+  "cta": {
+    "titulo": "Sua Black Friday merece *esse nível.*",
+    "botao": "CHAME NA DM",
+    "nota": "Conceito criado com IA. Não é um cliente real."
+  },
+  "legenda": "Black Friday com cara de campanha de luxo, sem estúdio e sem sessão de fotos 🖤\n\nConceito da SITH.IA para uma loja de moda fictícia. Não é marca nem cliente real.\n\nO que faz uma Black Friday parecer premium e não liquidação:\n→ preto, fumaça e um único tom de dourado\n→ o rosto passa atitude, não desespero de desconto\n→ o detalhe do presente cria vontade antes do preço\n\nFaltam pouco mais de cinco semanas para a Black Friday. Quer a sua campanha pronta antes disso? Me chama na DM.\n\n#sithia #blackfriday2026 #criativoscomia #publicidadecomia #campanhademoda"
+}
