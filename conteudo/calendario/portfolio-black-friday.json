@@ -8,14 +8,14 @@
   "pasta_imagens": "criativos/fontes/portfolio-black-friday",
   "pessoa_estilo": "width:1080px;height:1350px;object-fit:cover;left:0;top:0",
   "imagens": {
-    "produto": "produto.jpg",
+    "produto": "produto-oferta.jpg",
     "pessoa": "pessoa.jpg",
     "detalhe": "detalhe.jpg"
   },
   "capa": {
     "imagem": "capa.jpg",
     "tag": "PORTFÓLIO · CONCEITO",
-    "titulo": "Campanha de *Black Friday* feita com IA"
+    "titulo": "Campanha de *Black Friday* com ofertas que vendem"
   },
   "bastidor": {
     "tag": "PORTFÓLIO · CONCEITO",
@@ -25,15 +25,31 @@
   "peças": [
     {
       "rotulo": "01 · O PRODUTO",
-      "texto": "A sacola vira o símbolo da data"
+      "texto": "O tênis da coleção pela metade do preço",
+      "oferta": {
+        "faixa": "BLACK FRIDAY · *ATÉ 70% OFF*",
+        "selo": "-50%",
+        "de": "De R$ 599",
+        "por": "R$ 299"
+      }
     },
     {
-      "rotulo": "02 · O ROSTO",
-      "texto": "Atitude de campanha de luxo"
+      "rotulo": "02 · O LOOK",
+      "texto": "Leve 3 peças e pague só 2",
+      "oferta": {
+        "selo": "3x2",
+        "selo_sub": "NO LOOK",
+        "linha": "SÓ NA BLACK FRIDAY"
+      }
     },
     {
-      "rotulo": "03 · O DETALHE",
-      "texto": "O presente que todo mundo quer abrir"
+      "rotulo": "03 · A URGÊNCIA",
+      "texto": "Frete grátis e brinde por 48 horas",
+      "oferta": {
+        "selo": "48H",
+        "selo_sub": "SÓ ATÉ DOMINGO",
+        "linha": "FRETE GRÁTIS + BRINDE"
+      }
     }
   ],
   "processo": {
@@ -42,24 +58,24 @@
       [
         "01",
         "BRIEFING",
-        "Loja de moda quer uma Black Friday com cara de luxo, não de liquidação."
+        "Loja de moda quer vender mais na Black Friday sem parecer liquidação barata."
       ],
       [
         "02",
         "REFERÊNCIAS",
-        "Editoriais de moda escuros, fumaça vermelha e detalhes dourados, do Pinterest."
+        "Editoriais de moda escuros e anúncios de varejo que convertem, do Pinterest."
       ],
       [
         "03",
         "GERAÇÃO E AJUSTE",
-        "Fotos com IA refinadas até ficarem nível campanha, prontas para feed e anúncio."
+        "Fotos com IA + selo de desconto, preço de/por e urgência, prontos para feed e anúncio."
       ]
     ]
   },
   "cta": {
-    "titulo": "Sua Black Friday merece *esse nível.*",
+    "titulo": "Sua Black Friday merece *vender mais.*",
     "botao": "CHAME NA DM",
     "nota": "Conceito criado com IA. Não é um cliente real."
   },
-  "legenda": "Black Friday com cara de campanha de luxo, sem estúdio e sem sessão de fotos 🖤\n\nConceito da SITH.IA para uma loja de moda fictícia. Não é marca nem cliente real.\n\nO que faz uma Black Friday parecer premium e não liquidação:\n→ preto, fumaça e um único tom de dourado\n→ o rosto passa atitude, não desespero de desconto\n→ o detalhe do presente cria vontade antes do preço\n\nFaltam pouco mais de cinco semanas para a Black Friday. Quer a sua campanha pronta antes disso? Me chama na DM.\n\n#sithia #blackfriday2026 #criativoscomia #publicidadecomia #campanhademoda"
+  "legenda": "Oferta de Black Friday que vende sem parecer liquidação barata 🖤\n\nConceito da SITH.IA para uma loja de moda fictícia. Não é marca nem cliente real, e os preços são ilustrativos.\n\nO que faz uma oferta de Black Friday vender:\n→ desconto grande e claro na primeira olhada\n→ preço de/por que dá para entender em 1 segundo\n→ urgência real: prazo curto, frete grátis ou brinde\n\nFaltam pouco mais de cinco semanas para a Black Friday. Quer as peças da sua loja prontas antes disso? Me chama na DM.\n\n#sithia #blackfriday2026 #criativoscomia #publicidadecomia #campanhademoda"
 }

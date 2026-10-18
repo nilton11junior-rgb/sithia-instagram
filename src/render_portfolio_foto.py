@@ -27,6 +27,33 @@ body{{width:1080px;height:1350px;overflow:hidden;position:relative;background:#0
 .foot{{position:absolute;left:80px;right:80px;bottom:64px;display:flex;justify-content:space-between;font-family:'Mono';font-size:20px;letter-spacing:.15em;color:#ffffffcc;z-index:5}}
 .acc{{color:{cor}}}"""
 
+
+def oferta_html(o, cor):
+    """Selo de oferta opcional (peças de campanha de varejo, ex.: Black Friday). Campos: selo, faixa, de, por, linha."""
+    if not o:
+        return ""
+    css = (f'.of-selo{{position:absolute;top:150px;right:70px;width:250px;height:250px;border-radius:50%;background:{cor};color:#120c05;'
+           f'display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-10deg);box-shadow:0 20px 60px #000b;z-index:6}}'
+           '.of-selo b{font-family:Anton;font-size:96px;line-height:.95}.of-selo span{font-family:Mono;font-weight:700;font-size:22px;letter-spacing:.12em}'
+           '.of-faixa{position:absolute;left:0;right:0;top:0;background:#000;color:#fff;font-family:Anton;font-size:40px;letter-spacing:.12em;text-align:center;padding:14px 0;z-index:6}'
+           f'.of-faixa em{{color:{cor};font-style:normal}}'
+           '.of-preco{position:absolute;left:80px;bottom:370px;z-index:6;display:flex;align-items:flex-end;gap:26px}'
+           '.of-de{font-family:Mono;font-size:30px;color:#ffffffaa;text-decoration:line-through;margin-bottom:14px}'
+           f'.of-por{{font-family:Anton;font-size:110px;line-height:1;color:{cor};text-shadow:0 6px 30px #000}}'
+           f'.of-linha{{position:absolute;left:80px;bottom:370px;z-index:6;font-family:Mono;font-weight:700;font-size:24px;letter-spacing:.2em;background:{cor};color:#120c05;padding:10px 18px;border-radius:8px}}')
+    h = f"<style>{css}</style>"
+    if o.get("faixa"):
+        h += f'<div class="of-faixa">{fmt(o["faixa"], cor)}</div>'
+    if o.get("selo"):
+        sub = html.escape(o.get("selo_sub", "OFF"))
+        h += f'<div class="of-selo"><b>{html.escape(o["selo"])}</b><span>{sub}</span></div>'
+    if o.get("por"):
+        de = f'<div class="of-de">{html.escape(o["de"])}</div>' if o.get("de") else ""
+        h += f'<div class="of-preco">{de}<div class="of-por">{html.escape(o["por"])}</div></div>'
+    elif o.get("linha"):
+        h += f'<div class="of-linha">{html.escape(o["linha"])}</div>'
+    return h
+
 def uri(pasta, nome): return "data:image/jpeg;base64," + b64(pasta / nome)
 
 def bastidor(d, pasta, n):
@@ -62,7 +89,7 @@ def capa_foto(d, pasta, n):
         f'.tag{{position:absolute;left:80px;bottom:330px;font-family:Mono;font-size:24px;letter-spacing:.3em;color:{cor};text-shadow:0 2px 14px #000}}'
         f'.tit{{position:absolute;left:80px;right:80px;bottom:150px;font-family:Anton;font-size:84px;line-height:1.02;text-transform:uppercase;text-shadow:0 6px 40px #000c}}'
         f'</style></head><body><img class="img" src="{uri(pasta, c["imagem"])}"><div class="shade"></div>'
-        f'<div class="tag">{html.escape(c["tag"])}</div><div class="tit">{fmt(c["titulo"], cor)}</div>'
+        f'<div class="tag">{html.escape(c["tag"])}</div><div class="tit">{fmt(c["titulo"], cor)}</div>{oferta_html(c.get("oferta"), cor)}'
         f'<div class="foot"><span>ARRASTE PRO LADO &rarr;</span><span>@SITH.IA.OFICIAL</span></div></body></html>')
 
 def peca(d, pasta, n, chave, idx, estilo):
@@ -74,7 +101,7 @@ def peca(d, pasta, n, chave, idx, estilo):
         f'.txt{{position:absolute;left:80px;right:80px;bottom:140px;font-family:Anton;font-size:84px;line-height:1.05;text-transform:uppercase;text-shadow:0 6px 40px #000c}}'
         f'.txt i{{display:block;width:90px;height:6px;background:{cor};margin-bottom:26px}}'
         f'</style></head><body><img class="img" src="{uri(pasta, d["imagens"][chave])}"><div class="shade"></div>'
-        f'<div class="rot">{html.escape(p["rotulo"])}</div><div class="txt"><i></i>{html.escape(p["texto"])}</div>'
+        f'<div class="rot" style="{"top:100px" if (p.get("oferta") or {}).get("faixa") else ""}">{html.escape(p["rotulo"])}</div><div class="txt"><i></i>{html.escape(p["texto"])}</div>{oferta_html(p.get("oferta"), cor)}'
         f'<div class="foot"><span>CONCEITO CRIADO COM IA</span><span>{n}/6</span></div></body></html>')
 
 def processo(d, pasta, n):
