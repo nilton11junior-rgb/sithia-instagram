@@ -1,0 +1,11 @@
+# Só configuração de ferramentas (o projeto não é um pacote instalável).
+[tool.ruff]
+target-version = "py312"
+line-length = 160  # os renders montam HTML/CSS em linhas longas; não reformatar o código todo
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]  # erros, pyflakes e ordem de imports
+ignore = ["E401", "E501", "E701", "E702", "E731"]  # estilo compacto já usado em src/; E501: 70 linhas longas de HTML/CSS nos renders (medido em 18/10/2026), não reformatar
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

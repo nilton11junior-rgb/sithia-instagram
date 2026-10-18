@@ -3,8 +3,13 @@
 Uso: python3 src/render_noticia.py conteudo/calendario/noticia-astra.json
 Slides: capa (imagem gerada com IA), fato, ponte, cta. Visual SITH.IA (fundo escuro, azul-índigo).
 Saída: criativos/gerados/noticia/<id>/slide-01..N.png"""
-import base64, html, json, re, sys
+import base64
+import html
+import json
+import re
+import sys
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent

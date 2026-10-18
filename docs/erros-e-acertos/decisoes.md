@@ -26,7 +26,7 @@ Mais recente primeiro. Modelo em [_modelo.md](_modelo.md).
 
 ### 2026-10-02 · Grade fixa de 3 colunas: prompt, portfólio, notícia  `#criativo` `#processo`
 - **Contexto:** o Nilton quer que cada coluna do perfil tenha sempre o mesmo tipo de post.
-- **Escolha:** coluna 1 = prompt, coluna 2 = portfólio, coluna 3 = notícias de tecnologia. Publicar na ordem notícia, portfólio, prompt (segunda, quarta, sexta).
+- **Escolha:** coluna 1 = prompt, coluna 2 = portfólio, coluna 3 = notícias de tecnologia. Publicar na ordem notícia, portfólio, prompt (hoje 1 por dia, girando os 3).
 - **Motivo:** o Instagram põe o post mais novo à esquerda; terminar cada trio com o prompt mantém a ordem. Hoje há 3 fixados e 3 posts não fixados, então a grade já está alinhada.
 - **Antes de criar:** pedir a referência de cada tipo ao Nilton e montar os modelos juntos, na identidade da SITH.IA.
 - **Revisar quando:** mudar a quantidade de fixados ou postar fora do trio.
@@ -47,7 +47,7 @@ Mais recente primeiro. Modelo em [_modelo.md](_modelo.md).
 
 ### 2026-10-01 · Ritmo: 3 a 4 posts por semana  `#processo`
 - **Contexto:** o perfil é novo (4 posts, 51 seguidores).
-- **Escolha:** segunda, quarta e sexta às 19h (horário de Brasília), com um quarto post opcional.
+- **(Substituída em 03/10/2026 pelo post diário: dias úteis 12h, fim de semana 10h; ver CLAUDE.md.)** **Escolha:** segunda, quarta e sexta às 19h (horário de Brasília), com um quarto post opcional.
 - **Motivo:** ritmo sustentável e previsível. O horário das 19h é um ponto de partida, não uma verdade.
 - **Revisar quando:** houver dados do Insights do Instagram sobre o horário de melhor alcance.
 

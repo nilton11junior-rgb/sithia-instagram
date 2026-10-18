@@ -4,8 +4,13 @@ Uso: python3 src/render_portfolio_foto.py conteudo/calendario/portfolio-burger.j
 Slides: 1 bastidor (monitor com as 3 peças), 2-4 peças em tela cheia, 5 processo, 6 CTA.
 Saída: criativos/gerados/portfolio-burger/<id>/slide-01..06.png
 Regras: peças sem cor nem logo da SITH.IA; conceito rotulado; sem marca real."""
-import base64, html, json, re, sys
+import base64
+import html
+import json
+import re
+import sys
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent

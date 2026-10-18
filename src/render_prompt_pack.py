@@ -4,8 +4,13 @@ Slides: 1 capa (foto com a palavra gerada na própria imagem) · 2..N um estilo 
 "PROMPT:" translúcido para copiar · último: CTA.
 Uso: python3 src/render_prompt_pack.py conteudo/calendario/<post>.json
 JSON: id, pasta_imagens, capa{imagem, rotulo, sub}, estilos[{imagem, nome, cor, prompt}], cta{titulo, sub, botao}"""
-import base64, html, json, re, sys
+import base64
+import html
+import json
+import re
+import sys
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent

@@ -3,8 +3,10 @@
 - post fixado "O que a SITH.IA cria" (carrossel 1080x1350) em criativos/gerados/perfil/fixado-servicos/
 - destaques: capas + stories 1080x1920 em criativos/gerados/perfil/destaques/
 Uso: python3 src/render_perfil.py"""
-import base64, html
+import base64
+import html
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent

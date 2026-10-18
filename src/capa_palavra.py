@@ -3,11 +3,15 @@
 Recorta a pessoa da foto (rembg), põe a palavra entre o fundo e a pessoa e salva um JPEG 1080x1350.
 Uso: python3 src/capa_palavra.py <foto> <saida.jpg> "GPT-6" [cor_palavra] [topo_px] [tamanho_px]
 Requer: pip install "rembg[cpu]" (baixa o modelo isnet-general-use na 1a vez)."""
-import base64, io, os, sys
+import base64
+import io
+import os
+import sys
 from pathlib import Path
+
 from PIL import Image
 from playwright.sync_api import sync_playwright
-from rembg import remove, new_session
+from rembg import new_session, remove
 
 ROOT = Path(__file__).resolve().parent.parent
 def b64(b): return base64.b64encode(b).decode()

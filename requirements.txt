@@ -1,2 +1,4 @@
 playwright>=1.40
 requests>=2.31
+pillow>=10.0
+rembg[cpu]>=2.0.50

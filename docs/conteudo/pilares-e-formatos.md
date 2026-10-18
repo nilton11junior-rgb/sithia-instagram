@@ -21,7 +21,7 @@ Limite técnico da API: 2 a 10 slides.
 - 1ª linha é o gancho (aparece antes do "mais").
 - Corpo curto, com a promessa do carrossel.
 - Um pedido claro: salvar, comentar ou chamar na DM.
-- 5 a 8 hashtags no final, mistura de nicho (`#iaparamarcas`) e marca (`#sithia`).
+- 5 hashtags no final (#sithia + 3 de nicho + no máximo 1 ampla). Regra atual em `CLAUDE.md`.
 
 ## Calendário base
 Segunda, quarta e sexta, 19h (Brasília). Ajustar com dados do Insights.

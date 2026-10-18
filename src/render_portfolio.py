@@ -3,8 +3,9 @@
 Uso: python3 src/render_portfolio.py
 Saída: criativos/gerados/2026-10-07/qua-portfolio-alva/slide-01..06.png
 Slides 2-4 = peças do projeto (cores da marca fictícia). Slide 1 = bastidor (monta as peças num monitor). Slides 5-6 = moldura SITH.IA."""
-import base64, io
+import base64
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent

@@ -14,9 +14,14 @@ Uso:
 Aceita dois formatos de arquivo: {"semana":..., "posts":[...]} ou um único post (JSON com "id" e "slides").
 As imagens são os JPEG slide-NN.jpg em criativos/gerados/**/<id>/ (gere com src/export_jpg.py).
 Estado dos posts já publicados: estado/published.json (não republica duas vezes)."""
-import json, os, subprocess, sys, time
+import json
+import os
+import subprocess
+import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
+
 import requests
 
 ROOT = Path(__file__).resolve().parent.parent

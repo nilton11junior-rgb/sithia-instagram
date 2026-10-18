@@ -4,6 +4,7 @@ Uso: python3 src/export_jpg.py            # todos os posts em criativos/gerados/
      python3 src/export_jpg.py <pasta>   # uma pasta"""
 import sys
 from pathlib import Path
+
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent

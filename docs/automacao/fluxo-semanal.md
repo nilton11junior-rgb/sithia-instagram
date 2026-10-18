@@ -1,5 +1,7 @@
 # Fluxo semanal
 
+> **Desatualizado desde 03/10/2026** (era o fluxo de 3 posts por semana). O fluxo atual é 1 post por dia, com aprovação do Nilton antes de qualquer push: ver `CLAUDE.md` e `AGENTS.md`. Mantido como histórico.
+
 Tempo estimado: 30 a 45 minutos por semana.
 
 ## Domingo (ou sexta anterior)

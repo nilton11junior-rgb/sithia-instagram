@@ -1,6 +1,8 @@
-# Regras do projeto SITH.IA Instagram
+@AGENTS.md
 
-Idioma de trabalho e de todo o conteúdo: **português do Brasil**.
+# Claude: regras específicas do SITH.IA Instagram
+
+O `AGENTS.md` (importado acima) traz comandos, regras gerais e o mapa das docs. Aqui fica só o que é do jeito de trabalhar do Claude neste projeto.
 
 ## APROVAÇÕES (regra do Nilton, 16/10/2026) — PRIORIDADE MÁXIMA
 - Cada pedido de aprovação de post vai numa mensagem SEPARADA, só com aquele post (slides + legenda + dia/hora), sem misturar outros assuntos. Se misturar, ele não vê.
@@ -32,11 +34,9 @@ Vale para notícia, prompt e portfólio, sem exceção:
 - Horários (BRT, decisão do Nilton com base em pesquisa de horários de pico): **dias úteis 12h; sábado e domingo 10h**.
 - Primeira rodada: sáb 03/10 notícia, dom 04/10 portfólio, seg 05/10 prompt. Depois: ter 06 notícia, qua 07 portfólio, qui 08 prompt, e assim por diante.
 - Produzir em lotes (3 a 4 posts por vez) para nunca faltar post aprovado. Conteúdo/CTA não pode citar dia fixo ("toda segunda"); usar "toda semana" ou "todo dia".
-- (Abaixo, o texto antigo da grade semanal: valem as colunas, ignore "segunda, quarta, sexta" e "19h".)
-- Coluna 1: post de **prompt**. Coluna 2: **portfólio**. Coluna 3: **notícias de tecnologia**.
-- Ordem de publicação para manter as colunas: notícia, depois portfólio, depois prompt (o mais novo fica à esquerda). Sugestão: segunda, quarta, sexta.
+- Colunas da grade: coluna 1 = **prompt**, coluna 2 = **portfólio**, coluna 3 = **notícia** (publicar na ordem notícia → portfólio → prompt; o mais novo fica à esquerda).
 - Os 3 posts fixados ocupam a primeira linha; a grade só alinha se continuarem 3 fixados e a quantidade de posts não fixados for múltiplo de 3.
-- Antes de criar qualquer modelo de post (prompt, portfólio, notícia): pedir a referência ao Nilton e montar junto com ele.
+- Referências: hoje vêm do Pinterest (fluxo obrigatório, item 2); peça referência ao Nilton quando for um modelo de post totalmente novo.
 
 ## Autonomia e aprovação (regra do Nilton)
 - Post de notícia: eu escolho a notícia em alta (mundial e Brasil, tudo sobre IA/tecnologia) e produzo o post inteiro. Regras em `docs/conteudo/modelos-de-post/noticia-tech.md`.
@@ -50,49 +50,27 @@ Vale para notícia, prompt e portfólio, sem exceção:
 2. Para criativos, ler `docs/marca/identidade-visual.md`.
 
 ## Regras fixas
-- Texto de slide e legenda só em `conteudo/calendario/*.json`. Nunca no código.
 - Todo carrossel novo: capa, miolo, e último slide com CTA ("Chame na DM").
 - Palavra-chave do título entre asteriscos (`*IA*`) vira azul.
-- Imagens geradas ficam só em `criativos/gerados/<semana>/<post>/`.
-- Nunca apagar nem editar à mão `estado/published.json`.
-- Nunca colocar token, senha ou `.env` no repositório.
-- Depois de mudar calendário ou script: rodar `src/publish.py ... --dry-run`.
+- Slides gerados ficam em `criativos/gerados/<tipo>/<id>/`.
+- Depois de mudar calendário ou script: rodar `python3 scripts/check.py` (e `src/publish.py <json> --dry-run` se mexeu no robô).
 - Ao trabalhar na pasta do OneDrive pelo Claude (Cowork): só dá para criar/sobrescrever arquivos, não mover nem apagar. Definir o destino final dos arquivos antes de gravar; se algo precisar sair, pedir ao Nilton e listar os nomes exatos.
 - Antes de publicar uma semana: abrir capa, um miolo e o CTA de cada carrossel e conferir.
 
 ## Memória
 Aprendeu algo (erro, acerto, decisão)? Registre em `docs/erros-e-acertos/` usando `_modelo.md`, mais recente no topo.
 
-## Comandos
-- Gerar: `python src/render.py conteudo/calendario/<semana>.json`
-- Testar publicação: `python src/publish.py conteudo/calendario/<semana>.json --dry-run`
-
-## Modelo do chat (decisão do Nilton, 02/10/2026)
-- Para montar posts (prompt, portfólio, notícia) o ideal é o Opus: o Nilton troca com `/model`. Claude não consegue trocar o modelo sozinho, então avisa quando for começar um post.
-- No dia a dia (organização, ajustes pequenos, conversa) usar o Sonnet para gastar menos token.
-- Post de PROMPT (modelo de teste "retrato cinema") aprovado em 02/10/2026 como padrão visual da coluna 1.
-
-## Personagens (decisão do Nilton, 02/10/2026)
-- Pessoas nos posts são sempre **Nilton** e/ou **Bruno** (sócio), usando as fichas em `marca/personagens/` (ver o README de lá). Anexar a ficha no Gemini e conferir o rosto antes de usar.
-- Post de PORTFÓLIO (burger, estilo bastidor + peças em tela cheia) aprovado em 02/10/2026 como padrão visual da coluna 2.
-- Post de NOTÍCIA (OpenAI Astra/Sol, 5 slides, capa gerada com IA) aprovado em 02/10/2026 como primeiro modelo da coluna 3. Melhorar no próximo (capa em resolução maior).
+## Personagens
+- Pessoas nos posts são sempre **Nilton** e/ou **Bruno** (sócio), alternando a cada post. Guias de rosto: `marca/personagens/nilton-guia-2026-10.png` e `bruno-guia-2026-10.jpg` (fora do Git; ver o README de lá).
+- Modelos aprovados: prompt "pack de estilos" (11/10), portfólio com capa cinematográfica (11/10), notícia com palavra gigante na capa (09/10).
 
 ## Legendas (regra do Nilton, 03/10/2026)
 - Legenda nunca em bloco único. Estrutura: gancho (1 linha) → parágrafos curtos de 1–2 frases → chamada para ação em linhas separadas ("Salve este post.", "Siga @sith.ia.oficial…", "Chama na DM.") → fontes (só notícia) → **hashtags sempre por último**, separadas por linha em branco.
 - Listas curtas com "→". No máximo 1 emoji no gancho. Linhas em branco entre os blocos.
-- Aplicado nos 3 posts aprovados (prompt, portfólio, notícia).
-
-## Automação (03/10/2026)
-- Repositório público: github.com/nilton11junior-rgb/sithia-instagram. Robô: `.github/workflows/publish.yml` (a cada 30 min). Segredos `IG_USER_ID` e `IG_ACCESS_TOKEN` no GitHub. Token vale 60 dias: renovar antes de ~01/12/2026.
-- Teste real feito em 03/10: o robô publicou o post de prompt no @sith.ia.oficial (funcionou). Nilton apagou o post à mão; data devolvida para 09/10 e `estado/published.json` zerado.
-- O robô grava `estado/published.json` no GitHub. Antes de qualquer `git push` da pasta local, fazer `git pull`.
-
-## Fila e lições (03/10/2026)
-- Agendado e aprovado: notícia Astra (publicada 03/10), portfólio burger (dom 04/10 10h), prompt retrato cinema (seg 05/10 12h), portfólio barbearia (qua 07/10 12h), prompt foto de perfil (qui 08/10 12h). Faltam: notícia ter 06/10 (montar na segunda, com notícia do dia).
-- O agendador (cron) do GitHub Actions é pouco confiável e atrasa horas. Se um post não sair no horário: Actions > publicar-instagram > Run workflow (o robô publica tudo que já venceu).
-- Gemini: o Chrome bloqueia vários downloads. Para pegar imagem em tamanho original, exibir a imagem a 100% num overlay e tirar capturas em faixas (topo e base), depois juntar com PIL.
-- Gemini recusa prompts de "navalha na barba/pele"; usar objetos (escova, espuma, tigela).
-- Imagens de pessoas: continuar a conversa "Barbearia Premium: Nilton e Bruno" no Gemini (já tem as referências) em vez de reenviar fichas.
+- Desde 11/10/2026 vale **um CTA só** (item 6 do fluxo obrigatório); a estrutura acima continua.
 
 ## Padrão visual das capas (aprovado em 09/10/2026)
 Todos os posts seguem docs/conteudo/padrao-visual-capa.md: foto cinematográfica com o Nilton (boca fechada, sério, pele retocada natural), palavra gigante atrás da pessoa (src/capa_palavra.py), imagens geradas no ChatGPT e referências da pasta PROMPTS do Pinterest.
+
+## Histórico
+Regras antigas (Gemini, fila de 03/10, escolha de modelo) foram para `docs/erros-e-acertos/historico-claude-md.md`.

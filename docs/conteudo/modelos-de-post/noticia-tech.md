@@ -83,8 +83,8 @@ Alternativas descartadas por enquanto (ficam para outros formatos):
 1. Gancho de uma linha com a notícia.
 2. Dois parágrafos curtos: o que aconteceu e por que importa.
 3. "Fonte: [veículo]".
-4. CTA: "Siga @sith.ia.oficial para uma notícia de IA toda segunda."
-5. 5 a 8 hashtags (`#sithia #inteligenciaartificial #tecnologia #noticiasdetecnologia #ia`).
+4. CTA: um só (enviar ou salvar), sem citar dia fixo. Regra atual em `CLAUDE.md`.
+5. 5 hashtags (#sithia + 3 de nicho + no máximo 1 ampla), regra atual em `CLAUDE.md` (fluxo obrigatório, item 6).
 
 ### Regras de conteúdo
 - **Sempre citar a fonte** (slide 4 e legenda). Esse é o ponto fraco da referência e a nossa vantagem.

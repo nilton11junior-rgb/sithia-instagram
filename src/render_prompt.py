@@ -3,8 +3,13 @@
 Uso: python3 src/render_prompt.py conteudo/calendario/prompt-teste.json
 Imagens: criativos/fontes/prompt-teste/antes.png e depois.png (geradas no Gemini). Se faltarem, usa um espaço reservado.
 Saída: criativos/gerados/prompt-teste/<id>/slide-01..05.png"""
-import base64, html, json, re, sys
+import base64
+import html
+import json
+import re
+import sys
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent

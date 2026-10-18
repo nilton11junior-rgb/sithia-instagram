@@ -8,8 +8,13 @@ Uso: python3 src/render_prompt_editorial.py conteudo/calendario/<post>.json
 JSON (tipo "prompt-editorial"): id, cor, pasta_imagens, imagem (nome do arquivo em pasta_imagens),
   capa{linha1, linha2, tagline}, prompt_titulo, prompt_texto, ficha[lista curta], cta{titulo, sub, botao}
 Saída: criativos/gerados/<pasta>/<id>/slide-01..04.png (depois: python3 src/export_jpg.py <pasta>)"""
-import base64, html, json, re, sys
+import base64
+import html
+import json
+import re
+import sys
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -43,8 +48,9 @@ def corners(n, total, esq="DESLIZE PARA MAIS &rarr;", dir_="@SITH.IA.OFICIAL"):
 
 def hud_layer(d, hero_path, cor, n_line="01"):
     """Camada HUD (estilo vigilância) com a marca SITH.IA por cima da foto."""
-    from PIL import Image
     import io
+
+    from PIL import Image
     h = d.get("hud")
     if not h: return ""
     W, H = 1080, 1350
@@ -79,7 +85,7 @@ def hud_layer(d, hero_path, cor, n_line="01"):
         f'<div class="pid" style="left:82px;display:none">person_01</div>'
         f'<div class="card"><div class="hd">{html.escape(h.get("card_titulo","ATIVIDADE OFFLINE DETECTADA"))}</div>'
         f'<div class="bd"><div class="tx"><div class="id">ID: {html.escape(h.get("id","S-2210-01"))}</div>'
-        + "".join(f"<div>{html.escape(l)}</div>" for l in h["linhas"]) +
+        + "".join(f"<div>{html.escape(linha)}</div>" for linha in h["linhas"]) +
         f'<div class="pp">SITH.IA ID</div></div><img src="{pas}"></div></div>'
         f'<div class="sig">signal strength: 92%<br>noise level: minimal<br>output filter: active<br><br>SITHIA_FEED</div>')
 

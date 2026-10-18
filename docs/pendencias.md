@@ -4,11 +4,11 @@ Marque com `[x]` ao concluir e registre o aprendizado em `erros-e-acertos/`.
 
 ## Bloqueiam a publicação automática
 - [x] Instagram já é conta Profissional (Página do Facebook não é necessária no caminho Login do Instagram)
-- [ ] Entrar em developers.facebook.com com a conta do Facebook "Sith IA" e concluir o registro de desenvolvedor
-- [ ] Criar o app na Meta (permissão `instagram_business_content_publish`) e gerar o token de longa duração
-- [ ] Criar o repositório público no GitHub e cadastrar os Secrets `IG_USER_ID` e `IG_ACCESS_TOKEN`
-- [ ] Mover `automacao/github-workflow-publish.yml` para `.github/workflows/publish.yml`
-- [ ] Anotar a data de vencimento do token (60 dias) e criar lembrete de renovação
+- [x] Entrar em developers.facebook.com com a conta do Facebook "Sith IA" e concluir o registro de desenvolvedor
+- [x] Criar o app na Meta (permissão `instagram_business_content_publish`) e gerar o token de longa duração
+- [x] Criar o repositório público no GitHub e cadastrar os Secrets `IG_USER_ID` e `IG_ACCESS_TOKEN`
+- [x] Mover `automacao/github-workflow-publish.yml` para `.github/workflows/publish.yml`
+- [ ] Renovar o token do Instagram antes de ~01/12/2026 (vale 60 dias; anotado em docs/architecture.md)
 
 ## Marca
 - [x] Facebook (perfil "Sith IA") com foto, capa, bio e link iguais ao Instagram (02/10/2026)

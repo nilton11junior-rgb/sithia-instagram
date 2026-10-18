@@ -2,8 +2,13 @@
 """Renderiza carrosséis da SITH.IA (1080x1350) a partir de content/*.json.
 Uso (a partir da raiz do projeto): python3 src/render.py conteudo/calendario/semana-2026-10-05.json
 Saída: criativos/gerados/<semana>/<id-do-post>/slide-01.png ..."""
-import base64, html, json, re, sys
+import base64
+import html
+import json
+import re
+import sys
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
