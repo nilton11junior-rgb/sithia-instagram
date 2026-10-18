@@ -1,0 +1,51 @@
+{
+  "id": "seg-noticia-chatgpt-anuncios",
+  "tipo": "noticia",
+  "publicar_em": "2026-10-19T12:00:00-03:00",
+  "aprovado": false,
+  "cor": "#3DDC97",
+  "imagem_capa": "criativos/fontes/noticia-chatgpt-anuncios/capa.jpg",
+  "faixa": "SITH.IA NEWS · OUT 2026",
+  "slides": [
+    {
+      "tipo": "capa",
+      "kicker": "IA · NOTÍCIA DA SEMANA",
+      "titulo": "O anúncio do ChatGPT *sabe o que você digita*",
+      "sub": "E pode usar seu e-mail e telefone"
+    },
+    {
+      "tipo": "fato",
+      "num": "01",
+      "titulo": "O que *aconteceu*",
+      "texto": "Em 15/10, o 404 Media mostrou como o ChatGPT escolhe quem vê cada anúncio.",
+      "texto2": "O anunciante descreve o tipo de conversa que quer alcançar, como quem pergunta sobre tecnologia ou privacidade, e o anúncio aparece para quem está falando desse assunto.",
+      "fonte": "Fonte: 404 Media, 15/10/2026"
+    },
+    {
+      "tipo": "fato",
+      "num": "02",
+      "titulo": "E-mail e *telefone* também",
+      "texto": "O anunciante também pode subir listas de e-mails e telefones de clientes.",
+      "texto2": "A OpenAI cruza essas listas com quem usa o ChatGPT. Dá para desligar a personalização de anúncios, mas o próprio aviso diz que o anúncio ainda pode usar a conversa atual.",
+      "fonte": "Fonte: 404 Media e MobileSyrup, 15–16/10/2026"
+    },
+    {
+      "tipo": "ponte",
+      "num": "03",
+      "titulo": "O que isso muda pra *quem cria*",
+      "itens": [
+        "Para marcas: anúncio dentro da conversa é um canal novo, e vale acompanhar de perto.",
+        "Para você: o que você digita vira contexto. Não coloque dado sensível no chat.",
+        "Confira hoje nas configurações do ChatGPT a opção de personalização de anúncios."
+      ],
+      "nota": "Leitura da SITH.IA"
+    },
+    {
+      "tipo": "cta",
+      "titulo": "IA explicada *toda semana*",
+      "sub": "Salve este post e siga @sith.ia.oficial.",
+      "botao": "SEGUIR"
+    }
+  ],
+  "legenda": "O anúncio que aparece no ChatGPT pode ser escolhido pelo que você está digitando 👀\n\nEm 15/10 o site 404 Media mostrou como funciona: o anunciante descreve o tipo de conversa que quer alcançar e o anúncio aparece para quem está falando daquele assunto. Ele também pode subir listas de e-mails e telefones, que a OpenAI cruza com quem usa o ChatGPT.\n\nDá para desligar a personalização de anúncios, mas o aviso da própria configuração diz que o anúncio ainda pode usar a conversa atual.\n\nO que muda para quem cria:\n→ para marcas, é um canal de anúncio novo para acompanhar\n→ para você, o que entra no chat vira contexto\n→ confira hoje a opção de personalização de anúncios\n\nManda para quem conta a vida inteira pro ChatGPT.\n\nFontes: 404 Media (15/10/2026) e MobileSyrup (16/10/2026)\n\n#sithia #noticiasdeia #chatgpt #privacidadedigital #anunciosonline"
+}
