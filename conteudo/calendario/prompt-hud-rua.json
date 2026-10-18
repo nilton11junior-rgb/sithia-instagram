@@ -23,7 +23,7 @@
     "sub": "Troque a cena, a roupa e a cidade e faça o seu. Marque @sith.ia.oficial com o resultado.",
     "botao": "SIGA O SITH.IA"
   },
-  "legenda": "Sua foto de rua virou cena de vigilância, com a sua cara e a sua marca no HUD.\n\nO segredo: gerar a foto limpa primeiro e colocar o HUD depois, assim o texto sai nítido.\n\nEstá tudo no slide 3: copie o prompt, anexe uma foto do seu rosto e troque roupa, cidade e objeto na mão.\n\nSalve esse post para usar depois.\nComente \"HUD\" que eu mando o passo a passo do overlay.\nSiga @sith.ia.oficial para mais prompts de IA.\n\n#sithia #prompts #inteligenciaartificial #gemini #fotoia #promptsdeia",
+  "legenda": "Sua foto de rua virou cena de vigilância, com a sua cara e a sua marca no HUD.\n\nO segredo: gerar a foto limpa primeiro e colocar o HUD depois, assim o texto sai nítido.\n\nEstá tudo no slide 3: copie o prompt, anexe uma foto do seu rosto e troque roupa, cidade e objeto na mão.\n\nSalve esse post para usar depois.\nComente \"HUD\" que eu mando o passo a passo do overlay.\nSiga @sith.ia.oficial para mais prompts de IA.\n\n#sithia #prompts #inteligenciaartificial #gemini #fotoia",
   "cor_hud": "#A98BFF",
   "hud": {
     "rosto": [

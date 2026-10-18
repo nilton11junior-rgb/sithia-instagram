@@ -18,7 +18,7 @@
   - `publicar_em` está em ISO com fuso;
   - `aprovado` é booleano;
   - a legenda não está vazia e tem até 2.200 caracteres;
-  - há no máximo 30 hashtags. Acima de 5 é **aviso** e só vale para post ainda não publicado.
+  - há no máximo 5 hashtags, o limite do Instagram desde 18/12/2025 (antes eram 30). A regra só vale para post ainda não publicado.
 - Para post **não publicado**:
   - as imagens citadas existem;
   - se estiver aprovado, tem de 2 a 10 `slide-NN.jpg` em `criativos/gerados/**/<id>/`, que é o que o robô exige.

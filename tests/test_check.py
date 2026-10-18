@@ -33,9 +33,9 @@ def test_imagem_inexistente_e_aprovado_sem_slides():
     assert any("slides JPEG" in e for e in erros)
 
 
-def test_hashtags_acima_da_regra_viram_aviso():
-    erros, avisos = _val(legenda="Gancho #sithia #a #b #c #d #e")
-    assert erros == [] and any("hashtags" in a for a in avisos)
+def test_mais_de_5_hashtags_e_erro():
+    erros, _ = _val(legenda="Gancho #sithia #a #b #c #d #e")
+    assert any("hashtags" in e for e in erros)
 
 
 def test_id_repetido():
@@ -50,5 +50,5 @@ def test_post_publicado_nao_exige_imagens():
 
 
 def test_hashtags_coladas_e_legenda_nao_texto():
-    assert any("hashtags" in a for a in _val(legenda="G #sithia#a#b#c#d#e")[1])
+    assert any("hashtags" in e for e in _val(legenda="G #sithia#a#b#c#d#e")[0])
     assert any("precisa ser texto" in e for e in _val(legenda=["x"])[0])

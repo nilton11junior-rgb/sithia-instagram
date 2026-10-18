@@ -21,8 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 LIMITE_LINHAS = 350
 LIMITE_LEGENDA = 2200  # limite do Instagram
-LIMITE_HASHTAGS_IG = 30  # limite do Instagram
-HASHTAGS_REGRA = 5  # regra do projeto (plugin marketing-instagram, 11/10/2026)
+LIMITE_HASHTAGS_IG = 5  # limite do Instagram desde 18/12/2025 (antes eram 30); também é a regra do projeto
 
 
 def _pasta_slides(post_id):
@@ -72,10 +71,8 @@ def validar_post(p, publicados, ids_vistos):
     if len(legenda) > LIMITE_LEGENDA:
         erros.append(f"{pid}: legenda com {len(legenda)} caracteres (máx. {LIMITE_LEGENDA})")
     n_tags = len(re.findall(r"#\w+", legenda))
-    if n_tags > LIMITE_HASHTAGS_IG:
-        erros.append(f"{pid}: {n_tags} hashtags (Instagram aceita {LIMITE_HASHTAGS_IG})")
-    elif n_tags > HASHTAGS_REGRA and pid not in publicados:
-        avisos.append(f"{pid}: {n_tags} hashtags (regra do projeto: {HASHTAGS_REGRA})")
+    if n_tags > LIMITE_HASHTAGS_IG and pid not in publicados:
+        erros.append(f"{pid}: {n_tags} hashtags (o Instagram aceita até {LIMITE_HASHTAGS_IG} desde 18/12/2025)")
     if pid in publicados:
         return erros, avisos  # já publicado: imagens antigas podem ter saído do repositório
     for img in _imagens_referenciadas(p):

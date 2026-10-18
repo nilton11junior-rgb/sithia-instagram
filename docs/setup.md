@@ -93,3 +93,16 @@ Subagente só de leitura (Sonnet) revisou o diff contra `HEAD`. Nenhum problema 
 - a contagem de hashtags coladas (`#a#b`) passou a ser feita por regex;
 - legenda que não é texto agora gera erro limpo.
 Segurança: nada encontrado no escopo revisado. Isso não garante que o projeto seja seguro.
+
+## Adoção do instagram-agent (18/10/2026)
+- **Fonte:** https://github.com/Jakeschincariol/instagram-agent-skill, revisão `d03c56b` (13/09/2026). Licença MIT.
+- **Onde ficou:** 13 skills copiadas sem alteração em `.claude/skills/ig-*`, no escopo do projeto. Não houve instalação global.
+- **Antes de copiar:** li o código. As 6 ferramentas Python usam só a biblioteca padrão, não acessam a rede e só gravam arquivo quando recebem `-o`. A skill `ig-viral` cita comandos `yt-dlp` (com rede) que só rodam quando alguém pede.
+- **Roteamento:** a seção "Skills de Instagram" do `CLAUDE.md` define qual pacote usar para cada tarefa e evita rodar dois para a mesma coisa.
+- **Voz:** `docs/conteudo/voz-sithia.md`, copiada também para `~/.claude/instagram/voice.md` na sessão atual.
+- **Evidência:**
+  - os nomes no frontmatter batem com as pastas;
+  - `caption.py` rodou na legenda de 19/10: mostrou o recorte do feed, 5 hashtags e a legenda dentro do limite;
+  - `detect.py` rodou: a nota VOICE é calibrada para inglês e foi marcada como "não vale" para português.
+- **Descoberta pelo cliente:** é carregada automaticamente quando a pasta do repositório é aberta no Claude Code ou no VS Code. Nesta sessão do Cowork o Claude lê os `SKILL.md` direto do repositório. Ainda não confirmado: ver as skills listadas numa sessão nova.
+- **Efeito no `check.py`:** a fonte da skill (e notícias de 12/2025) diz que o Instagram passou a aceitar no máximo 5 hashtags por post. Mais de 5 virou ERRO para post não publicado. 4 rascunhos antigos, não aprovados, tinham 6 e perderam a última hashtag.

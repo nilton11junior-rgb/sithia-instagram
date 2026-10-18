@@ -25,6 +25,27 @@ Vale para notícia, prompt e portfólio, sem exceção:
    - Nunca inventar número ou fato.
    - Plano semanal: ig-content-planner (meta de salvamentos + envios; ver docs/conteudo/plano-*.md).
 
+## Skills de Instagram (qual usar)
+Há dois pacotes instalados. Não rode os dois para a mesma tarefa.
+- **marketing-instagram / instagram-skills** (plugin da conta) para o dia a dia dos posts: `ig-carousel-planner`, `ig-caption-writer`, `ig-hashtag-strategist`, `ig-humanizer` e `ig-content-planner`. Regra do item 6 do fluxo.
+- **instagram-agent** (`.claude/skills/ig-*`, adotado em 18/10/2026) para o que o outro não cobre:
+  - `ig-reel` + `hookscore.py`/`beats.py` para Reels (roteiro, gancho pontuado, tempo de cada fala);
+  - `ig-story` para a sequência de stories;
+  - `ig-dm` para DMs (entrega de palavra-chave, proposta de parceria, follow-up);
+  - `ig-comment` e `ig-reply` para comentar e responder;
+  - `ig-audit` para o pós-post com insights colados pelo Nilton;
+  - `ig-viral` para achar o que está funcionando no nicho;
+  - `ig-profile` para a nota do perfil de 0 a 100;
+  - `ig-repurpose` para transformar conteúdo longo em vários posts.
+- **Antes de mostrar a legenda ao Nilton:** rodar `python3 .claude/skills/ig-caption/caption.py <legenda.txt>` para ver o que o feed mostra antes do "... mais" (o recorte dos 125 caracteres).
+- **Adaptações para português:**
+  - o `caption.py` não reconhece CTA em português (aparece "0 ask") e conta "→" como emoji;
+  - a nota VOICE do `detect.py` mede contrações e pronomes em inglês e não vale aqui;
+  - do `humanize.py`/`detect.py`, aproveitar só a limpeza de caracteres invisíveis e travessões;
+  - a skill sugere 3 hashtags; vale a regra do projeto, que é até 5.
+- **Voz:** `docs/conteudo/voz-sithia.md`. As skills leem `~/.claude/instagram/voice.md`, então copie o arquivo para lá.
+- Nenhuma dessas skills publica. Publicar continua sendo só pelo robô, depois da aprovação.
+
 ## Glossário
 - Quando o Nilton diz "sith", ele fala da **SITH.IA**: a empresa e o perfil do Instagram.
 - Grafia certa: **SITH.IA**. @ do Instagram: **@sith.ia.oficial**. Nunca escrever "SITH.AI" nem "sitth".
