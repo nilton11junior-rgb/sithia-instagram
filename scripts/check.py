@@ -5,7 +5,8 @@ Roda, nesta ordem:
   1. compilação de todos os .py (erros de sintaxe);
   2. ruff (lint), se estiver instalado;
   3. limite de 350 linhas por arquivo .py (referência do vibe-coding-toolkit);
-  4. validação do calendário (conteudo/calendario/*.json) — ver validar_post().
+  4. validação do calendário (conteudo/calendario/*.json) — ver validar_post();
+  5. fila de posts aprovados à frente — ver avisar_fila().
 
 Uso:  python3 scripts/check.py           (sai com código 1 se houver ERRO)
 Avisos (AVISO) não reprovam: servem para acompanhar regras novas sem quebrar posts antigos."""
@@ -15,12 +16,13 @@ import re
 import shutil
 import subprocess
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 LIMITE_LINHAS = 350
 LIMITE_LEGENDA = 2200  # limite do Instagram
+FILA_MINIMA = 2  # posts aprovados à frente; abaixo disso a grade diária corre risco de ficar sem post
 LIMITE_HASHTAGS_IG = 5  # limite do Instagram desde 18/12/2025 (antes eram 30); também é a regra do projeto
 
 
@@ -87,10 +89,27 @@ def validar_post(p, publicados, ids_vistos):
     return erros, avisos
 
 
-def validar_calendario():
+def avisar_fila(posts, publicados, agora):
+    """Aviso quando há menos de FILA_MINIMA posts aprovados, não publicados, com data futura."""
+    fila = []
+    for p in posts:
+        try:
+            quando = datetime.fromisoformat(p.get("publicar_em", ""))
+        except (TypeError, ValueError):
+            continue
+        if p.get("aprovado") is True and p.get("id") not in publicados and quando.tzinfo and quando > agora:
+            fila.append(quando)
+    if len(fila) >= FILA_MINIMA:
+        return []
+    prox = f" (próximo: {min(fila):%d/%m %H:%M})" if fila else ""
+    return [f"fila: só {len(fila)} post(s) aprovado(s) à frente{prox}; a meta é {FILA_MINIMA}+. "
+            "Avise o Nilton e produza o próximo antes de outras tarefas."]
+
+
+def validar_calendario(agora=None):
     estado = ROOT / "estado" / "published.json"
     publicados = json.loads(estado.read_text(encoding="utf-8")) if estado.exists() else {}
-    erros, avisos, vistos = [], [], set()
+    erros, avisos, vistos, posts = [], [], set(), []
     for f in sorted((ROOT / "conteudo" / "calendario").glob("*.json")):
         try:
             d = json.loads(f.read_text(encoding="utf-8"))
@@ -98,9 +117,11 @@ def validar_calendario():
             erros.append(f"{f.name}: JSON inválido ({e})")
             continue
         for p in d["posts"] if "posts" in d else [d]:
+            posts.append(p)
             e, a = validar_post(p, publicados, vistos)
             erros += [f"{f.name}: {x}" for x in e]
             avisos += [f"{f.name}: {x}" for x in a]
+    avisos += avisar_fila(posts, publicados, agora or datetime.now(timezone.utc))
     return erros, avisos
 
 

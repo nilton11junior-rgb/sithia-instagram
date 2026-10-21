@@ -19,6 +19,7 @@
   - `aprovado` é booleano;
   - a legenda não está vazia e tem até 2.200 caracteres;
   - há no máximo 5 hashtags, o limite do Instagram desde 18/12/2025 (antes eram 30). A regra só vale para post ainda não publicado.
+- Fila: **aviso** se houver menos de 2 posts aprovados, não publicados e com data futura (`avisar_fila`). É o sinal de início de sessão (ver `AGENTS.md`).
 - Para post **não publicado**:
   - as imagens citadas existem;
   - se estiver aprovado, tem de 2 a 10 `slide-NN.jpg` em `criativos/gerados/**/<id>/`, que é o que o robô exige.
@@ -48,3 +49,10 @@ Use em mudanças no robô de publicação, nos segredos ou no workflow, ou para 
 - Proporcional ao risco.
 - Mudança no robô, nos segredos ou no workflow: revisão independente (subagente só leitura) com cenário de falha concreto.
 - Mudança só de conteúdo: o `check.py` e a conferência visual dos slides (capa, um slide do meio e o CTA) bastam.
+
+## Melhoria do harness (Harness2, modo nativo)
+- **O que é:** quando um agente erra por causa das instruções, memória ou ferramentas do projeto, faz-se uma comparação curta: cópia descartável → teste com agente novo antes → uma mudança pequena → mesmo teste depois → adota só se melhorar. É inspirado no Harness2 (Google Research); não roda o framework dele nem reproduz os resultados.
+- **Fonte:** prompt 15 do vibe-coding-toolkit, revisão `790a895304e0c08b70a5b215c9d334f1c86b816c` (arquivo `docs/prompts/15-harness-improvement.md` e guia `docs/tools/23-harness2.md` do toolkit).
+- **Como chamar (colar no chat):** "Leia https://raw.githubusercontent.com/soumatheusgomes/vibe-coding-toolkit/main/docs/prompts/15-harness-improvement.md e execute o bloco Prompt neste projeto, em modo nativo, para a falha: <descreva a falha>."
+- **Limite padrão:** uma comparação por falha, depois relatório. Mais rodadas só com motivo concreto. Um teste que passa é fumaça, não prova de confiabilidade.
+- **Rodar de novo os testes de fumaça** depois de mudar `AGENTS.md`, `CLAUDE.md`, skills ou o `check.py`.

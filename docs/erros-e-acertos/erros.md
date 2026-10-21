@@ -2,6 +2,14 @@
 
 Mais recente primeiro. Modelo em [_modelo.md](_modelo.md).
 
+### 2026-10-21 · Fila de posts ficou vazia sem aviso  `#processo` `#calendario`
+- **O que aconteceu:** na quarta 21/10, às 11h05, não havia nenhum post aprovado a partir daquele dia. O post das 12h (prompt Y2K) nem tinha sido produzido.
+- **Causa:** a regra "produzir em lotes de 3 a 4" estava no `CLAUDE.md`, mas nada mostrava a fila no começo da sessão. Num teste com agente novo, ele respondeu a pergunta do Nilton e não falou da fila.
+- **Impacto:** o post do dia passou do horário de pico.
+- **Como corrigimos:** o `scripts/check.py` passou a avisar (`AVISO fila:`) quando há menos de 2 posts aprovados à frente. O `AGENTS.md` manda rodar o check no início de toda sessão e avisar o Nilton antes de outros assuntos. Teste antes/depois registrado em `docs/setup.md` (seção Harness2).
+- **Como evitar daqui para frente:** rodar o check ao abrir a sessão. Se o check não puder rodar, olhar `conteudo/calendario/` e `estado/published.json` à mão. Revisar a regra se a meta de fila mudar ou se o check deixar de rodar no início.
+- **Envolve:** `scripts/check.py`, `AGENTS.md`
+
 ### 2026-10-02 · Enviar arquivo para o Facebook exige o usuário escolher na janela do Windows  `#processo` `#automacao`
 - **O que aconteceu:** o navegador do Claude abre a tela de carregar foto, mas não consegue escolher o arquivo na janela do sistema. O envio foi feito pelo Nilton.
 - **Causa:** a janela de seleção de arquivo é do Windows, fora da página.

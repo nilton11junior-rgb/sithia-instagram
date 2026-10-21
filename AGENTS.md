@@ -32,6 +32,7 @@ Idioma de trabalho, docs e conteúdo: **português do Brasil**. O dono (Nilton) 
 - Continuar o trabalho autorizado; um bloqueio para só o que depende dele. Respeitar pausa e cancelamento.
 - Publicar, mandar mensagem a terceiros, gastar dinheiro (ex.: créditos) e apagar coisas exigem autorização explícita. Instalar ferramenta não autoriza nada disso.
 - Ao retomar trabalho de outra sessão: conferir arquivos, `git status` e o que já foi publicado (`estado/published.json`) antes de confiar em resumos.
+- **Início de toda sessão ou retomada:** rodar `python3 scripts/check.py`. Se aparecer o aviso `fila:`, a primeira coisa a dizer ao Nilton é que a fila está curta (qual dia fica sem post) e propor produzir o próximo, antes de responder outros assuntos.
 
 ## Delegação e revisão
 - Subagente só quando isolar contexto ou paralelizar ajuda; tarefa simples se faz direto.

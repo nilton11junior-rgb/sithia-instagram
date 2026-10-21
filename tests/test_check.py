@@ -3,7 +3,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
-from check import validar_post  # noqa: E402
+from datetime import datetime  # noqa: E402
+
+from check import avisar_fila, validar_post  # noqa: E402
 
 BASE = {"id": "teste-x", "publicar_em": "2026-10-20T12:00:00-03:00", "aprovado": False,
         "legenda": "Gancho\n\n#sithia #a #b #c #d"}
@@ -52,3 +54,13 @@ def test_post_publicado_nao_exige_imagens():
 def test_hashtags_coladas_e_legenda_nao_texto():
     assert any("hashtags" in e for e in _val(legenda="G #sithia#a#b#c#d#e")[0])
     assert any("precisa ser texto" in e for e in _val(legenda=["x"])[0])
+
+
+def test_fila_curta_avisa_e_fila_cheia_nao():
+    agora = datetime.fromisoformat("2026-10-21T11:00:00-03:00")
+    futuro = [{**BASE, "id": f"p{i}", "aprovado": True, "publicar_em": f"2026-10-2{i}T12:00:00-03:00"}
+              for i in (2, 3)]
+    assert avisar_fila(futuro, {}, agora) == []
+    assert "só 1" in avisar_fila(futuro[:1], {}, agora)[0]
+    assert "só 0" in avisar_fila([{**BASE, "aprovado": False}] + futuro[:0], {}, agora)[0]
+    assert "só 1" in avisar_fila(futuro, {"p2": {}}, agora)[0]  # já publicado não conta

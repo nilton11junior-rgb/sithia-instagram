@@ -106,3 +106,22 @@ Segurança: nada encontrado no escopo revisado. Isso não garante que o projeto 
   - `detect.py` rodou: a nota VOICE é calibrada para inglês e foi marcada como "não vale" para português.
 - **Descoberta pelo cliente:** é carregada automaticamente quando a pasta do repositório é aberta no Claude Code ou no VS Code. Nesta sessão do Cowork o Claude lê os `SKILL.md` direto do repositório. Ainda não confirmado: ver as skills listadas numa sessão nova.
 - **Efeito no `check.py`:** a fonte da skill (e notícias de 12/2025) diz que o Instagram passou a aceitar no máximo 5 hashtags por post. Mais de 5 virou ERRO para post não publicado. 4 rascunhos antigos, não aprovados, tinham 6 e perderam a última hashtag.
+
+## Reaplicação do prompt 12 (21/10/2026)
+- **Toolkit:** revisão `790a895304e0c08b70a5b215c9d334f1c86b816c`. A única mudança desde `de66fe3` é o Harness2 (componente 23 e prompt 15) virar padrão do setup. O resto da matriz acima foi reaproveitado sem mudança, porque o projeto e as entradas não mudaram.
+- **Brainstorm aprovado pelo Nilton:** usar a falha real da semana (fila vazia na quarta 21/10, sem aviso) para a comparação, sem instalar nada.
+
+| Componente | Situação | Motivo / evidência |
+|---|---|---|
+| 23 Harness2, modo nativo | ✅ | Comparação abaixo. Procedimento reutilizável em `docs/quality.md`. |
+| 23 Harness2, CLI oficial | ➖ não selecionado | Exige laboratório separado, dependências e custo de API; não há necessidade. |
+
+### Comparação (modo nativo, inspirado no Harness2; não executa o framework)
+- **Caso:** sessão nova, "agora é qua 21/10 11h05", e o Nilton pergunta quais skills estão em uso. Critério de aceite definido antes: a resposta avisa que não há post aprovado à frente.
+- **Cliente/modelo:** Claude (Cowork, nuvem). Os dois testes usaram subagente novo, modelo Haiku, só leitura, em cópias descartáveis (`git archive` do HEAD), com o mesmo prompt.
+- **Antes (baseline):** leu AGENTS/CLAUDE/skills e respondeu só sobre as skills. **Não avisou da fila. Falhou.**
+- **Mudança candidata:** aviso `fila:` no `scripts/check.py` (menos de 2 aprovados à frente) + uma linha no `AGENTS.md` mandando rodar o check no início da sessão e avisar o Nilton primeiro. Mais 1 teste em `tests/test_check.py`.
+- **Depois (candidato):** seguiu a regra nova e tentou rodar o check. O classificador do modo automático bloqueou a execução numa cópia ("Code from External"), e o agente não tentou contornar. Mesmo assim, a resposta terminou avisando que a fila não tinha sido conferida. **Melhorou, mas o aviso real não foi observado nesse teste.**
+- **Checagem independente (coordenador):** `check.py` na cópia baseline: 0 avisos; na cópia candidata: `AVISO fila: só 0 post(s) aprovado(s) à frente`. `pytest -q`: 9 passed. ruff: ok.
+- **Decisão:** adotado. A lição está em `docs/erros-e-acertos/erros.md` (21/10/2026).
+- **Limites:** foi um caso só, sem reinício real do cliente. O bloqueio do classificador pode se repetir em subagentes; na sessão principal o check roda normalmente. Próxima ação se a falha voltar: testar a alternativa de conferir o calendário à mão quando o check não rodar.
