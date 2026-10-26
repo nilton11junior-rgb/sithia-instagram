@@ -2,7 +2,7 @@
   "id": "ter-noticia-canva-craft",
   "tipo": "noticia",
   "publicar_em": "2026-10-27T12:00:00-03:00",
-  "aprovado": false,
+  "aprovado": true,
   "cor": "#7B6CFF",
   "imagem_capa": "criativos/fontes/noticia-canva-craft/capa.jpg",
   "faixa": "SITH.IA NEWS · OUT 2026",
