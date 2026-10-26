@@ -1,0 +1,65 @@
+{
+  "id": "qua-portfolio-relogio-conceito",
+  "tipo": "portfolio",
+  "publicar_em": "2026-10-28T12:00:00-03:00",
+  "aprovado": false,
+  "cor": "#C9A45C",
+  "conceito": true,
+  "pasta_imagens": "criativos/fontes/portfolio-relogio",
+  "pessoa_estilo": "width:1080px;height:1350px;object-fit:cover;left:0;top:0",
+  "imagens": {
+    "produto": "produto.jpg",
+    "pessoa": "pessoa.jpg",
+    "detalhe": "detalhe.jpg"
+  },
+  "capa": {
+    "imagem": "capa.jpg",
+    "tag": "PORTFÓLIO · CONCEITO",
+    "titulo": "Campanha de *relógio de luxo* para o presente de fim de ano"
+  },
+  "bastidor": {
+    "tag": "PORTFÓLIO · CONCEITO",
+    "titulo": "Relojoaria Órbita",
+    "sub": "Marca fictícia, criada com IA"
+  },
+  "peças": [
+    {
+      "rotulo": "01 · O PRODUTO",
+      "texto": "O relógio como joia, no estojo de presente"
+    },
+    {
+      "rotulo": "02 · O MOMENTO",
+      "texto": "O presente que vira lembrança de família"
+    },
+    {
+      "rotulo": "03 · O DETALHE",
+      "texto": "Cada ponteiro mostrado como obra de arte"
+    }
+  ],
+  "processo": {
+    "titulo": "Do briefing à *campanha*",
+    "passos": [
+      [
+        "01",
+        "BRIEFING",
+        "Relojoaria quer ser o presente de luxo do fim de ano, sem parecer catálogo."
+      ],
+      [
+        "02",
+        "REFERÊNCIAS",
+        "Fotos de alta joalheria e campanhas de relógio com luz dourada, do Pinterest."
+      ],
+      [
+        "03",
+        "GERAÇÃO E AJUSTE",
+        "Produto, pessoa e detalhe com IA, prontos para feed, stories e anúncio."
+      ]
+    ]
+  },
+  "cta": {
+    "titulo": "Sua marca merece fotos *de vitrine.*",
+    "botao": "CHAME NA DM",
+    "nota": "Conceito criado com IA. Não é um cliente real."
+  },
+  "legenda": "Foto de relógio de luxo sem estúdio, sem fotógrafo e sem um relógio de verdade ⌚\n\nConceito da SITH.IA para a Relojoaria Órbita, uma marca fictícia. Pensamos a campanha de presente de fim de ano em três peças:\n→ o produto como joia, no estojo\n→ o momento de entregar o presente\n→ o detalhe do mostrador em close\n\nTudo criado com IA, pronto para feed, stories e anúncio.\n\nQuer a campanha de fim de ano da sua marca pronta antes de dezembro? Me chama na DM.\n\n#sithia #fotografiadeproduto #publicidadecomia #campanhadenatal #relogiodeluxo"
+}

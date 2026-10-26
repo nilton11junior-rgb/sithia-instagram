@@ -1,0 +1,45 @@
+{
+  "id": "seg-prompt-pack-y2k",
+  "tipo": "prompt-pack",
+  "publicar_em": "2026-10-26T12:00:00-03:00",
+  "aprovado": false,
+  "cor": "#FF5FD2",
+  "pasta_imagens": "criativos/fontes/prompt-pack-y2k",
+  "capa": {
+    "imagem": "capa.jpg",
+    "rotulo": "Pack anos 2000: *4 retratos Y2K* com IA",
+    "sub": "Nilton, fundador da SITH.IA · copie e cole"
+  },
+  "estilos": [
+    {
+      "imagem": "flash.jpg",
+      "nome": "Flash estourado",
+      "cor": "#FFE14D",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Foto vertical 4:5 tirada com câmera digital compacta dos anos 2000, à noite numa festa: flash direto e estourado, fundo escuro, leve granulado, cores um pouco saturadas e a data laranja da câmera no canto inferior direito. Jaqueta preta e corrente prateada, olhar sério para a câmera, boca fechada. No topo, a palavra FLASH gigante em letras cromadas estilo anos 2000, com a cabeça na frente das letras. Fotorrealista, sem outros textos e sem logos."
+    },
+    {
+      "imagem": "revista.jpg",
+      "nome": "Capa de revista",
+      "cor": "#FF5FD2",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Retrato vertical 4:5 de capa de revista teen do começo dos anos 2000, fundo de estúdio rosa liso, luz de beleza suave e brilhante, óculos escuros pequenos de lente colorida, camiseta branca e jaqueta prateada. Olhar sério para a câmera, boca fechada. No topo, a palavra ÍCONE gigante em letras infladas cromadas rosa, com a cabeça na frente das letras. Fotorrealista, sem nome de revista, sem outros textos e sem logos."
+    },
+    {
+      "imagem": "laser.jpg",
+      "nome": "Fundo de laser",
+      "cor": "#3FE0FF",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Retrato vertical 4:5 de estúdio de fotos de shopping dos anos 2000: fundo azul com feixes de laser e estrelas brilhantes, luz frontal de estúdio, moletom azul-claro e fones de ouvido grandes no pescoço. Pose de três quartos, olhar sério para a câmera, boca fechada. No topo, a palavra LASER gigante em letras cromadas azul-gelo, com a cabeça na frente das letras. Fotorrealista, sem outros textos e sem logos."
+    },
+    {
+      "imagem": "selfie.jpg",
+      "nome": "Selfie no espelho",
+      "cor": "#B6FF3B",
+      "prompt": "Use a pessoa da foto anexada, mantendo o rosto idêntico. Selfie vertical 4:5 no espelho de um quarto dos anos 2000, celular de flip prateado na mão cobrindo parte do queixo, flash do celular refletido no espelho, pôsteres sem texto e luzinhas na parede, calça cargo e camiseta larga verde-limão. Olhar sério para o espelho, boca fechada. No topo, a palavra SELFIE gigante em letras cromadas verde-limão, com a cabeça na frente das letras. Fotorrealista, sem outros textos e sem logos."
+    }
+  ],
+  "cta": {
+    "titulo": "Qual é o *seu Y2K?*",
+    "sub": "Salve este post para fazer o seu no fim de semana.",
+    "botao": "SIGA @SITH.IA.OFICIAL"
+  },
+  "legenda": "Sua foto com cara de 2003, sem câmera digital da época, com 4 prompts e o seu rosto 📸\n\nFlash estourado, capa de revista teen, fundo de laser de estúdio de shopping e selfie no espelho com celular de flip.\n\nComo usar:\n→ escolha o estilo e copie o prompt do slide\n→ cole no ChatGPT ou no Gemini com uma foto sua anexada\n→ troque a palavra do topo pelo seu nome\n\nSalve para fazer o seu no fim de semana.\n\n#sithia #y2k #promptsdeia #fotocomia #anos2000"
+}

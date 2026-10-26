@@ -1,0 +1,51 @@
+{
+  "id": "ter-noticia-canva-craft",
+  "tipo": "noticia",
+  "publicar_em": "2026-10-27T12:00:00-03:00",
+  "aprovado": false,
+  "cor": "#7B6CFF",
+  "imagem_capa": "criativos/fontes/noticia-canva-craft/capa.jpg",
+  "faixa": "SITH.IA NEWS · OUT 2026",
+  "slides": [
+    {
+      "tipo": "capa",
+      "kicker": "IA · NOTÍCIA DA SEMANA",
+      "titulo": "A Canva criou uma IA de imagem *só para design*",
+      "sub": "Treinada com milhões de templates"
+    },
+    {
+      "tipo": "fato",
+      "num": "01",
+      "titulo": "O que *aconteceu*",
+      "texto": "Em 22/10, a Canva lançou o Craft, sua primeira IA de imagem própria.",
+      "texto2": "Ele gera imagens em 2K, em mais de 30 formatos, e já está no Canva para usuários do mundo todo, além da API para desenvolvedores.",
+      "fonte": "Fonte: Canva Newsroom e Thurrott, 22/10/2026"
+    },
+    {
+      "tipo": "fato",
+      "num": "02",
+      "titulo": "Por que é *diferente*",
+      "texto": "A maioria das IAs aprende com fotos. O Craft aprendeu com templates.",
+      "texto2": "São milhões de peças feitas por pessoas. Ele planeja a composição (elementos, escala, texto) antes de desenhar, escreve em 55 idiomas e a imagem vira camadas editáveis.",
+      "fonte": "Fonte: Canva Newsroom, 10/2026"
+    },
+    {
+      "tipo": "ponte",
+      "num": "03",
+      "titulo": "O que isso muda pra *quem cria*",
+      "itens": [
+        "Post, cartaz e anúncio com texto legível saem direto da IA, sem remendo.",
+        "A arte vem em camadas: dá para ajustar em vez de gerar tudo de novo.",
+        "O diferencial passa a ser a ideia e a direção, não só a ferramenta."
+      ],
+      "nota": "Leitura da SITH.IA"
+    },
+    {
+      "tipo": "cta",
+      "titulo": "IA explicada *toda semana*",
+      "sub": "Salve este post e siga @sith.ia.oficial.",
+      "botao": "SEGUIR"
+    }
+  ],
+  "legenda": "A Canva lançou uma IA de imagem treinada com milhões de templates, não com fotos 🎨\n\nO Craft saiu em 22/10. É o primeiro modelo de imagem criado do zero pela Canva, e já está no app para usuários do mundo todo.\n\nEle primeiro planeja a composição (onde vai cada elemento, a escala e o texto) e só depois desenha. Escreve texto em 55 idiomas, gera em 2K e a imagem pode virar camadas editáveis.\n\nO que muda para quem cria:\n→ arte com texto legível sai direto da IA\n→ dá para ajustar a peça em vez de gerar tudo de novo\n→ a ideia e a direção pesam mais que a ferramenta\n\nManda para quem faz as artes da sua empresa no Canva.\n\nFontes: Canva Newsroom e Thurrott (22/10/2026)\n\n#sithia #noticiasdeia #canva #designcomia #inteligenciaartificial"
+}
